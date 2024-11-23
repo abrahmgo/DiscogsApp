@@ -7,218 +7,229 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290D167B2CF12013006702B4 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D16722CF12013006702B4 /* NetworkCore.framework */; };
-		290D17BA2CF124BF006702B4 /* NetworkCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D17B82CF124BF006702B4 /* NetworkCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		290D17BB2CF124BF006702B4 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B02CF124BF006702B4 /* MockNetworkService.swift */; };
-		290D17BC2CF124BF006702B4 /* NetworkCoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B12CF124BF006702B4 /* NetworkCoreAPI.swift */; };
-		290D17BD2CF124BF006702B4 /* NetworkCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B22CF124BF006702B4 /* NetworkCoreConfig.swift */; };
-		290D17BE2CF124BF006702B4 /* NetworkCoreSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B32CF124BF006702B4 /* NetworkCoreSampleData.swift */; };
-		290D17BF2CF124BF006702B4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B42CF124BF006702B4 /* NetworkError.swift */; };
-		290D17C02CF124BF006702B4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B52CF124BF006702B4 /* NetworkService.swift */; };
-		290D17C12CF124BF006702B4 /* NetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B62CF124BF006702B4 /* NetworkTargetType.swift */; };
-		290D17F42CF19B33006702B4 /* NetworkCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17F32CF19B33006702B4 /* NetworkCoreData.swift */; };
-		290D17F62CF19B66006702B4 /* NetworkCorePagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17F52CF19B66006702B4 /* NetworkCorePagination.swift */; };
+		290D16D42CF1229E006702B4 /* DiscogsUsecases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D16CB2CF1229E006702B4 /* DiscogsUsecases.framework */; };
+		290D17FE2CF1A0F7006702B4 /* DiscogsUsecases.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D17FC2CF1A0F7006702B4 /* DiscogsUsecases.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290D18012CF1A129006702B4 /* SearchArtistByNameUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18002CF1A129006702B4 /* SearchArtistByNameUsecase.swift */; };
+		290D18042CF1A136006702B4 /* DiscogsDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18032CF1A136006702B4 /* DiscogsDataSource.framework */; };
+		290D18052CF1A136006702B4 /* DiscogsDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18032CF1A136006702B4 /* DiscogsDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D18082CF1A13A006702B4 /* DiscogsEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18072CF1A13A006702B4 /* DiscogsEntities.framework */; };
+		290D18092CF1A13A006702B4 /* DiscogsEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18072CF1A13A006702B4 /* DiscogsEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		290D167C2CF12013006702B4 /* PBXContainerItemProxy */ = {
+		290D16D52CF1229E006702B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 290D16692CF12013006702B4 /* Project object */;
+			containerPortal = 290D16C22CF1229E006702B4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 290D16712CF12013006702B4;
-			remoteInfo = NetworkCore;
+			remoteGlobalIDString = 290D16CA2CF1229E006702B4;
+			remoteInfo = DiscogsUsecases;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		290D18062CF1A137006702B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				290D18092CF1A13A006702B4 /* DiscogsEntities.framework in Embed Frameworks */,
+				290D18052CF1A136006702B4 /* DiscogsDataSource.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		290D16722CF12013006702B4 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		290D167A2CF12013006702B4 /* NetworkCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		290D17B02CF124BF006702B4 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
-		290D17B12CF124BF006702B4 /* NetworkCoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreAPI.swift; sourceTree = "<group>"; };
-		290D17B22CF124BF006702B4 /* NetworkCoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreConfig.swift; sourceTree = "<group>"; };
-		290D17B32CF124BF006702B4 /* NetworkCoreSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreSampleData.swift; sourceTree = "<group>"; };
-		290D17B42CF124BF006702B4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		290D17B52CF124BF006702B4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		290D17B62CF124BF006702B4 /* NetworkTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTargetType.swift; sourceTree = "<group>"; };
-		290D17B82CF124BF006702B4 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
-		290D17F32CF19B33006702B4 /* NetworkCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreData.swift; sourceTree = "<group>"; };
-		290D17F52CF19B66006702B4 /* NetworkCorePagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCorePagination.swift; sourceTree = "<group>"; };
+		290D16CB2CF1229E006702B4 /* DiscogsUsecases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiscogsUsecases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D16D32CF1229E006702B4 /* DiscogsUsecasesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsUsecasesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17FC2CF1A0F7006702B4 /* DiscogsUsecases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscogsUsecases.h; sourceTree = "<group>"; };
+		290D18002CF1A129006702B4 /* SearchArtistByNameUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistByNameUsecase.swift; sourceTree = "<group>"; };
+		290D18032CF1A136006702B4 /* DiscogsDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D18072CF1A13A006702B4 /* DiscogsEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		290D167E2CF12013006702B4 /* NetworkCoreTests */ = {
+		290D16D72CF1229E006702B4 /* DiscogsUsecasesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NetworkCoreTests;
+			path = DiscogsUsecasesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		290D166F2CF12013006702B4 /* Frameworks */ = {
+		290D16C82CF1229E006702B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18082CF1A13A006702B4 /* DiscogsEntities.framework in Frameworks */,
+				290D18042CF1A136006702B4 /* DiscogsDataSource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		290D16772CF12013006702B4 /* Frameworks */ = {
+		290D16D02CF1229E006702B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290D167B2CF12013006702B4 /* NetworkCore.framework in Frameworks */,
+				290D16D42CF1229E006702B4 /* DiscogsUsecases.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		290D16682CF12013006702B4 = {
+		290D16C12CF1229E006702B4 = {
 			isa = PBXGroup;
 			children = (
-				290D17B92CF124BF006702B4 /* NetworkCore */,
-				290D167E2CF12013006702B4 /* NetworkCoreTests */,
-				290D16732CF12013006702B4 /* Products */,
+				290D17FD2CF1A0F7006702B4 /* DiscogsUsecases */,
+				290D16D72CF1229E006702B4 /* DiscogsUsecasesTests */,
+				290D18022CF1A136006702B4 /* Frameworks */,
+				290D16CC2CF1229E006702B4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		290D16732CF12013006702B4 /* Products */ = {
+		290D16CC2CF1229E006702B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				290D16722CF12013006702B4 /* NetworkCore.framework */,
-				290D167A2CF12013006702B4 /* NetworkCoreTests.xctest */,
+				290D16CB2CF1229E006702B4 /* DiscogsUsecases.framework */,
+				290D16D32CF1229E006702B4 /* DiscogsUsecasesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		290D17B72CF124BF006702B4 /* Network */ = {
+		290D17FD2CF1A0F7006702B4 /* DiscogsUsecases */ = {
 			isa = PBXGroup;
 			children = (
-				290D17B02CF124BF006702B4 /* MockNetworkService.swift */,
-				290D17B12CF124BF006702B4 /* NetworkCoreAPI.swift */,
-				290D17F32CF19B33006702B4 /* NetworkCoreData.swift */,
-				290D17F52CF19B66006702B4 /* NetworkCorePagination.swift */,
-				290D17B22CF124BF006702B4 /* NetworkCoreConfig.swift */,
-				290D17B32CF124BF006702B4 /* NetworkCoreSampleData.swift */,
-				290D17B42CF124BF006702B4 /* NetworkError.swift */,
-				290D17B52CF124BF006702B4 /* NetworkService.swift */,
-				290D17B62CF124BF006702B4 /* NetworkTargetType.swift */,
+				290D17FF2CF1A103006702B4 /* Artist */,
+				290D17FC2CF1A0F7006702B4 /* DiscogsUsecases.h */,
 			);
-			path = Network;
+			path = DiscogsUsecases;
 			sourceTree = "<group>";
 		};
-		290D17B92CF124BF006702B4 /* NetworkCore */ = {
+		290D17FF2CF1A103006702B4 /* Artist */ = {
 			isa = PBXGroup;
 			children = (
-				290D17B72CF124BF006702B4 /* Network */,
-				290D17B82CF124BF006702B4 /* NetworkCore.h */,
+				290D18002CF1A129006702B4 /* SearchArtistByNameUsecase.swift */,
 			);
-			path = NetworkCore;
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		290D18022CF1A136006702B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290D18072CF1A13A006702B4 /* DiscogsEntities.framework */,
+				290D18032CF1A136006702B4 /* DiscogsDataSource.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		290D166D2CF12013006702B4 /* Headers */ = {
+		290D16C62CF1229E006702B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290D17BA2CF124BF006702B4 /* NetworkCore.h in Headers */,
+				290D17FE2CF1A0F7006702B4 /* DiscogsUsecases.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		290D16712CF12013006702B4 /* NetworkCore */ = {
+		290D16CA2CF1229E006702B4 /* DiscogsUsecases */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 290D16832CF12013006702B4 /* Build configuration list for PBXNativeTarget "NetworkCore" */;
+			buildConfigurationList = 290D16DC2CF1229E006702B4 /* Build configuration list for PBXNativeTarget "DiscogsUsecases" */;
 			buildPhases = (
-				290D166D2CF12013006702B4 /* Headers */,
-				290D166E2CF12013006702B4 /* Sources */,
-				290D166F2CF12013006702B4 /* Frameworks */,
-				290D16702CF12013006702B4 /* Resources */,
+				290D16C62CF1229E006702B4 /* Headers */,
+				290D16C72CF1229E006702B4 /* Sources */,
+				290D16C82CF1229E006702B4 /* Frameworks */,
+				290D16C92CF1229E006702B4 /* Resources */,
+				290D18062CF1A137006702B4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NetworkCore;
+			name = DiscogsUsecases;
 			packageProductDependencies = (
 			);
-			productName = NetworkCore;
-			productReference = 290D16722CF12013006702B4 /* NetworkCore.framework */;
+			productName = DiscogsUsecases;
+			productReference = 290D16CB2CF1229E006702B4 /* DiscogsUsecases.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		290D16792CF12013006702B4 /* NetworkCoreTests */ = {
+		290D16D22CF1229E006702B4 /* DiscogsUsecasesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 290D16882CF12013006702B4 /* Build configuration list for PBXNativeTarget "NetworkCoreTests" */;
+			buildConfigurationList = 290D16E12CF1229E006702B4 /* Build configuration list for PBXNativeTarget "DiscogsUsecasesTests" */;
 			buildPhases = (
-				290D16762CF12013006702B4 /* Sources */,
-				290D16772CF12013006702B4 /* Frameworks */,
-				290D16782CF12013006702B4 /* Resources */,
+				290D16CF2CF1229E006702B4 /* Sources */,
+				290D16D02CF1229E006702B4 /* Frameworks */,
+				290D16D12CF1229E006702B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				290D167D2CF12013006702B4 /* PBXTargetDependency */,
+				290D16D62CF1229E006702B4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				290D167E2CF12013006702B4 /* NetworkCoreTests */,
+				290D16D72CF1229E006702B4 /* DiscogsUsecasesTests */,
 			);
-			name = NetworkCoreTests;
+			name = DiscogsUsecasesTests;
 			packageProductDependencies = (
 			);
-			productName = NetworkCoreTests;
-			productReference = 290D167A2CF12013006702B4 /* NetworkCoreTests.xctest */;
+			productName = DiscogsUsecasesTests;
+			productReference = 290D16D32CF1229E006702B4 /* DiscogsUsecasesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		290D16692CF12013006702B4 /* Project object */ = {
+		290D16C22CF1229E006702B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					290D16712CF12013006702B4 = {
+					290D16CA2CF1229E006702B4 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
-					290D16792CF12013006702B4 = {
+					290D16D22CF1229E006702B4 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = 290D166C2CF12013006702B4 /* Build configuration list for PBXProject "NetworkCore" */;
+			buildConfigurationList = 290D16C52CF1229E006702B4 /* Build configuration list for PBXProject "DiscogsUsecases" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 290D16682CF12013006702B4;
+			mainGroup = 290D16C12CF1229E006702B4;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 290D16732CF12013006702B4 /* Products */;
+			productRefGroup = 290D16CC2CF1229E006702B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				290D16712CF12013006702B4 /* NetworkCore */,
-				290D16792CF12013006702B4 /* NetworkCoreTests */,
+				290D16CA2CF1229E006702B4 /* DiscogsUsecases */,
+				290D16D22CF1229E006702B4 /* DiscogsUsecasesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		290D16702CF12013006702B4 /* Resources */ = {
+		290D16C92CF1229E006702B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		290D16782CF12013006702B4 /* Resources */ = {
+		290D16D12CF1229E006702B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,23 +239,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		290D166E2CF12013006702B4 /* Sources */ = {
+		290D16C72CF1229E006702B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290D17BB2CF124BF006702B4 /* MockNetworkService.swift in Sources */,
-				290D17BC2CF124BF006702B4 /* NetworkCoreAPI.swift in Sources */,
-				290D17BD2CF124BF006702B4 /* NetworkCoreConfig.swift in Sources */,
-				290D17BE2CF124BF006702B4 /* NetworkCoreSampleData.swift in Sources */,
-				290D17BF2CF124BF006702B4 /* NetworkError.swift in Sources */,
-				290D17F42CF19B33006702B4 /* NetworkCoreData.swift in Sources */,
-				290D17C02CF124BF006702B4 /* NetworkService.swift in Sources */,
-				290D17F62CF19B66006702B4 /* NetworkCorePagination.swift in Sources */,
-				290D17C12CF124BF006702B4 /* NetworkTargetType.swift in Sources */,
+				290D18012CF1A129006702B4 /* SearchArtistByNameUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		290D16762CF12013006702B4 /* Sources */ = {
+		290D16CF2CF1229E006702B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,18 +257,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		290D167D2CF12013006702B4 /* PBXTargetDependency */ = {
+		290D16D62CF1229E006702B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 290D16712CF12013006702B4 /* NetworkCore */;
-			targetProxy = 290D167C2CF12013006702B4 /* PBXContainerItemProxy */;
+			target = 290D16CA2CF1229E006702B4 /* DiscogsUsecases */;
+			targetProxy = 290D16D52CF1229E006702B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		290D16842CF12013006702B4 /* Debug */ = {
+		290D16DD2CF1229E006702B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -285,20 +289,22 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.NetworkCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.DiscogsUsecases;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		290D16852CF12013006702B4 /* Release */ = {
+		290D16DE2CF1229E006702B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -318,7 +324,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.NetworkCore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.DiscogsUsecases;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -328,7 +334,7 @@
 			};
 			name = Release;
 		};
-		290D16862CF12013006702B4 /* Debug */ = {
+		290D16DF2CF1229E006702B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -394,7 +400,7 @@
 			};
 			name = Debug;
 		};
-		290D16872CF12013006702B4 /* Release */ = {
+		290D16E02CF1229E006702B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -453,14 +459,14 @@
 			};
 			name = Release;
 		};
-		290D16892CF12013006702B4 /* Debug */ = {
+		290D16E22CF1229E006702B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.NetworkCoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.DiscogsUsecasesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -468,14 +474,14 @@
 			};
 			name = Debug;
 		};
-		290D168A2CF12013006702B4 /* Release */ = {
+		290D16E32CF1229E006702B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andres.NetworkCoreTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.DiscogsUsecasesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -486,34 +492,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		290D166C2CF12013006702B4 /* Build configuration list for PBXProject "NetworkCore" */ = {
+		290D16C52CF1229E006702B4 /* Build configuration list for PBXProject "DiscogsUsecases" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				290D16862CF12013006702B4 /* Debug */,
-				290D16872CF12013006702B4 /* Release */,
+				290D16DF2CF1229E006702B4 /* Debug */,
+				290D16E02CF1229E006702B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		290D16832CF12013006702B4 /* Build configuration list for PBXNativeTarget "NetworkCore" */ = {
+		290D16DC2CF1229E006702B4 /* Build configuration list for PBXNativeTarget "DiscogsUsecases" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				290D16842CF12013006702B4 /* Debug */,
-				290D16852CF12013006702B4 /* Release */,
+				290D16DD2CF1229E006702B4 /* Debug */,
+				290D16DE2CF1229E006702B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		290D16882CF12013006702B4 /* Build configuration list for PBXNativeTarget "NetworkCoreTests" */ = {
+		290D16E12CF1229E006702B4 /* Build configuration list for PBXNativeTarget "DiscogsUsecasesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				290D16892CF12013006702B4 /* Debug */,
-				290D168A2CF12013006702B4 /* Release */,
+				290D16E22CF1229E006702B4 /* Debug */,
+				290D16E32CF1229E006702B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 290D16692CF12013006702B4 /* Project object */;
+	rootObject = 290D16C22CF1229E006702B4 /* Project object */;
 }

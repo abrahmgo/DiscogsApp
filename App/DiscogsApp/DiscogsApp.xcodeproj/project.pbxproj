@@ -6,6 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		290D17952CF12395006702B4 /* DiscogsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17942CF12395006702B4 /* DiscogsData.framework */; };
+		290D17962CF12395006702B4 /* DiscogsData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17942CF12395006702B4 /* DiscogsData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D17992CF12399006702B4 /* DiscogsDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17982CF12399006702B4 /* DiscogsDataSource.framework */; };
+		290D179A2CF12399006702B4 /* DiscogsDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17982CF12399006702B4 /* DiscogsDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D179C2CF1239E006702B4 /* DiscogsEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D179B2CF1239E006702B4 /* DiscogsEntities.framework */; };
+		290D179D2CF1239E006702B4 /* DiscogsEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D179B2CF1239E006702B4 /* DiscogsEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D179F2CF123A1006702B4 /* DiscogsLocalizable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D179E2CF123A1006702B4 /* DiscogsLocalizable.framework */; };
+		290D17A02CF123A1006702B4 /* DiscogsLocalizable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D179E2CF123A1006702B4 /* DiscogsLocalizable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D17A22CF123A6006702B4 /* DiscogsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17A12CF123A6006702B4 /* DiscogsUI.framework */; };
+		290D17A32CF123A6006702B4 /* DiscogsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17A12CF123A6006702B4 /* DiscogsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D17A52CF123AD006702B4 /* DiscogsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17A42CF123AD006702B4 /* DiscogsUI.framework */; };
+		290D17A62CF123AD006702B4 /* DiscogsUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17A42CF123AD006702B4 /* DiscogsUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D17A82CF123B2006702B4 /* DiscogsUsecases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17A72CF123B2006702B4 /* DiscogsUsecases.framework */; };
+		290D17A92CF123B2006702B4 /* DiscogsUsecases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17A72CF123B2006702B4 /* DiscogsUsecases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D17AB2CF123B8006702B4 /* DiscogsUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AA2CF123B8006702B4 /* DiscogsUtils.framework */; };
+		290D17AC2CF123B8006702B4 /* DiscogsUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AA2CF123B8006702B4 /* DiscogsUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D17AE2CF123BE006702B4 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AD2CF123BE006702B4 /* NetworkCore.framework */; };
+		290D17AF2CF123BE006702B4 /* NetworkCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AD2CF123BE006702B4 /* NetworkCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		290D18152CF1A38D006702B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18112CF1A38D006702B4 /* ContentView.swift */; };
+		290D18162CF1A38D006702B4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18122CF1A38D006702B4 /* ContentViewModel.swift */; };
+		290D18172CF1A38D006702B4 /* DiscogsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18132CF1A38D006702B4 /* DiscogsAppApp.swift */; };
+		290D18182CF1A38D006702B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290D180E2CF1A38D006702B4 /* Preview Assets.xcassets */; };
+		290D18192CF1A38D006702B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290D18102CF1A38D006702B4 /* Assets.xcassets */; };
+		290D181C2CF1A397006702B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D181B2CF1A397006702B4 /* AppDelegate.swift */; };
+		290D181F2CF1A3C4006702B4 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D181E2CF1A3C4006702B4 /* APIConfig.swift */; };
+		290D18212CF1A3F1006702B4 /* APIBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18202CF1A3F1006702B4 /* APIBundle.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		290D164C2CF11F12006702B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,18 +52,52 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		290D17972CF12395006702B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				290D17A92CF123B2006702B4 /* DiscogsUsecases.framework in Embed Frameworks */,
+				290D179A2CF12399006702B4 /* DiscogsDataSource.framework in Embed Frameworks */,
+				290D17AF2CF123BE006702B4 /* NetworkCore.framework in Embed Frameworks */,
+				290D17A32CF123A6006702B4 /* DiscogsUI.framework in Embed Frameworks */,
+				290D179D2CF1239E006702B4 /* DiscogsEntities.framework in Embed Frameworks */,
+				290D17A62CF123AD006702B4 /* DiscogsUI.framework in Embed Frameworks */,
+				290D17A02CF123A1006702B4 /* DiscogsLocalizable.framework in Embed Frameworks */,
+				290D17962CF12395006702B4 /* DiscogsData.framework in Embed Frameworks */,
+				290D17AC2CF123B8006702B4 /* DiscogsUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		290D163B2CF11F12006702B4 /* DiscogsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscogsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D164B2CF11F12006702B4 /* DiscogsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D16552CF11F12006702B4 /* DiscogsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17942CF12395006702B4 /* DiscogsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17982CF12399006702B4 /* DiscogsDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D179B2CF1239E006702B4 /* DiscogsEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D179E2CF123A1006702B4 /* DiscogsLocalizable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17A12CF123A6006702B4 /* DiscogsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17A42CF123AD006702B4 /* DiscogsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17A72CF123B2006702B4 /* DiscogsUsecases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUsecases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17AA2CF123B8006702B4 /* DiscogsUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D17AD2CF123BE006702B4 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D180E2CF1A38D006702B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		290D18102CF1A38D006702B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		290D18112CF1A38D006702B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		290D18122CF1A38D006702B4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		290D18132CF1A38D006702B4 /* DiscogsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsAppApp.swift; sourceTree = "<group>"; };
+		290D181B2CF1A397006702B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		290D181E2CF1A3C4006702B4 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		290D18202CF1A3F1006702B4 /* APIBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBundle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		290D163D2CF11F12006702B4 /* DiscogsApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DiscogsApp;
-			sourceTree = "<group>";
-		};
 		290D164E2CF11F12006702B4 /* DiscogsAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DiscogsAppTests;
@@ -52,6 +115,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D17A82CF123B2006702B4 /* DiscogsUsecases.framework in Frameworks */,
+				290D17992CF12399006702B4 /* DiscogsDataSource.framework in Frameworks */,
+				290D17AE2CF123BE006702B4 /* NetworkCore.framework in Frameworks */,
+				290D17A22CF123A6006702B4 /* DiscogsUI.framework in Frameworks */,
+				290D179C2CF1239E006702B4 /* DiscogsEntities.framework in Frameworks */,
+				290D17A52CF123AD006702B4 /* DiscogsUI.framework in Frameworks */,
+				290D179F2CF123A1006702B4 /* DiscogsLocalizable.framework in Frameworks */,
+				290D17952CF12395006702B4 /* DiscogsData.framework in Frameworks */,
+				290D17AB2CF123B8006702B4 /* DiscogsUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +147,10 @@
 		290D16322CF11F12006702B4 = {
 			isa = PBXGroup;
 			children = (
-				290D163D2CF11F12006702B4 /* DiscogsApp */,
+				290D18142CF1A38D006702B4 /* DiscogsApp */,
 				290D164E2CF11F12006702B4 /* DiscogsAppTests */,
 				290D16582CF11F12006702B4 /* DiscogsAppUITests */,
+				290D17932CF12395006702B4 /* Frameworks */,
 				290D163C2CF11F12006702B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +165,61 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		290D17932CF12395006702B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290D17AD2CF123BE006702B4 /* NetworkCore.framework */,
+				290D17AA2CF123B8006702B4 /* DiscogsUtils.framework */,
+				290D17A72CF123B2006702B4 /* DiscogsUsecases.framework */,
+				290D17A42CF123AD006702B4 /* DiscogsUI.framework */,
+				290D17A12CF123A6006702B4 /* DiscogsUI.framework */,
+				290D179E2CF123A1006702B4 /* DiscogsLocalizable.framework */,
+				290D179B2CF1239E006702B4 /* DiscogsEntities.framework */,
+				290D17982CF12399006702B4 /* DiscogsDataSource.framework */,
+				290D17942CF12395006702B4 /* DiscogsData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		290D180F2CF1A38D006702B4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				290D180E2CF1A38D006702B4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		290D18142CF1A38D006702B4 /* DiscogsApp */ = {
+			isa = PBXGroup;
+			children = (
+				290D181A2CF1A391006702B4 /* Configuration */,
+				290D180F2CF1A38D006702B4 /* Preview Content */,
+				290D18102CF1A38D006702B4 /* Assets.xcassets */,
+				290D18112CF1A38D006702B4 /* ContentView.swift */,
+				290D18122CF1A38D006702B4 /* ContentViewModel.swift */,
+				290D18132CF1A38D006702B4 /* DiscogsAppApp.swift */,
+			);
+			path = DiscogsApp;
+			sourceTree = "<group>";
+		};
+		290D181A2CF1A391006702B4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				290D181D2CF1A3B4006702B4 /* Network */,
+				290D181B2CF1A397006702B4 /* AppDelegate.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		290D181D2CF1A3B4006702B4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				290D181E2CF1A3C4006702B4 /* APIConfig.swift */,
+				290D18202CF1A3F1006702B4 /* APIBundle.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,13 +230,11 @@
 				290D16372CF11F12006702B4 /* Sources */,
 				290D16382CF11F12006702B4 /* Frameworks */,
 				290D16392CF11F12006702B4 /* Resources */,
+				290D17972CF12395006702B4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				290D163D2CF11F12006702B4 /* DiscogsApp */,
 			);
 			name = DiscogsApp;
 			packageProductDependencies = (
@@ -212,6 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18182CF1A38D006702B4 /* Preview Assets.xcassets in Resources */,
+				290D18192CF1A38D006702B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18212CF1A3F1006702B4 /* APIBundle.swift in Sources */,
+				290D181C2CF1A397006702B4 /* AppDelegate.swift in Sources */,
+				290D18152CF1A38D006702B4 /* ContentView.swift in Sources */,
+				290D18162CF1A38D006702B4 /* ContentViewModel.swift in Sources */,
+				290D18172CF1A38D006702B4 /* DiscogsAppApp.swift in Sources */,
+				290D181F2CF1A3C4006702B4 /* APIConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +535,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -430,8 +563,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
