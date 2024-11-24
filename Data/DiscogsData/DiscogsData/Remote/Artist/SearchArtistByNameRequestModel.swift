@@ -12,4 +12,10 @@ struct SearchArtistByNameRequestModel {
     let page: Int
     let perPage: Int
     let name: String
+    
+    init(page: Int, perPage: Int = 30, name: String) {
+        self.page = page
+        self.perPage = perPage
+        self.name = name
+    }
 }

@@ -17,8 +17,9 @@ struct SearchArtistByNameAPI: SearchArtistByNameRemoteDataSource {
         self.service = service
     }
     
-    func execute(name: String) async throws -> DiscogsEntities.ArtistSearchInfo {
-        let model: SearchArtistByNameRequestModel = SearchArtistByNameRequestModel(page: 1, perPage: 10, name: name)
+    func execute(name: String, page: Int) async throws -> DiscogsEntities.ArtistSearchInfo {
+        let model: SearchArtistByNameRequestModel = SearchArtistByNameRequestModel(page: page,
+                                                                                   name: name)
         let endpoint: SearchArtistByNameEndpoint = SearchArtistByNameEndpoint(model: model)
         let request: NetworkCoreData<[SearchArtistByNameResponseModel]> = try await service.request(target: endpoint)
         

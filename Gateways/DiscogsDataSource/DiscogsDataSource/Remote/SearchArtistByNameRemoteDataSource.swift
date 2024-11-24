@@ -8,5 +8,5 @@
 import DiscogsEntities
 
 public protocol SearchArtistByNameRemoteDataSource {
-    func execute(name: String) async throws -> ArtistSearchInfo
+    func execute(name: String, page: Int) async throws -> ArtistSearchInfo
 }

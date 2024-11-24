@@ -25,14 +25,16 @@
 		290D17AC2CF123B8006702B4 /* DiscogsUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AA2CF123B8006702B4 /* DiscogsUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		290D17AE2CF123BE006702B4 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AD2CF123BE006702B4 /* NetworkCore.framework */; };
 		290D17AF2CF123BE006702B4 /* NetworkCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17AD2CF123BE006702B4 /* NetworkCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		290D18152CF1A38D006702B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18112CF1A38D006702B4 /* ContentView.swift */; };
-		290D18162CF1A38D006702B4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18122CF1A38D006702B4 /* ContentViewModel.swift */; };
 		290D18172CF1A38D006702B4 /* DiscogsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18132CF1A38D006702B4 /* DiscogsAppApp.swift */; };
 		290D18182CF1A38D006702B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290D180E2CF1A38D006702B4 /* Preview Assets.xcassets */; };
 		290D18192CF1A38D006702B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290D18102CF1A38D006702B4 /* Assets.xcassets */; };
 		290D181C2CF1A397006702B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D181B2CF1A397006702B4 /* AppDelegate.swift */; };
 		290D181F2CF1A3C4006702B4 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D181E2CF1A3C4006702B4 /* APIConfig.swift */; };
 		290D18212CF1A3F1006702B4 /* APIBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18202CF1A3F1006702B4 /* APIBundle.swift */; };
+		290D18342CF2A882006702B4 /* SarchArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18332CF2A882006702B4 /* SarchArtistView.swift */; };
+		290D18362CF2A8D3006702B4 /* SearchArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18352CF2A8D3006702B4 /* SearchArtistViewModel.swift */; };
+		290D183A2CF2BFFF006702B4 /* SearchViewModelDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18392CF2BFFF006702B4 /* SearchViewModelDependencies.swift */; };
+		290D183C2CF2C0A4006702B4 /* SearchArtistFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D183B2CF2C0A4006702B4 /* SearchArtistFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,12 +91,14 @@
 		290D17AD2CF123BE006702B4 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D180E2CF1A38D006702B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		290D18102CF1A38D006702B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		290D18112CF1A38D006702B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		290D18122CF1A38D006702B4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		290D18132CF1A38D006702B4 /* DiscogsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsAppApp.swift; sourceTree = "<group>"; };
 		290D181B2CF1A397006702B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		290D181E2CF1A3C4006702B4 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		290D18202CF1A3F1006702B4 /* APIBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBundle.swift; sourceTree = "<group>"; };
+		290D18332CF2A882006702B4 /* SarchArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarchArtistView.swift; sourceTree = "<group>"; };
+		290D18352CF2A8D3006702B4 /* SearchArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistViewModel.swift; sourceTree = "<group>"; };
+		290D18392CF2BFFF006702B4 /* SearchViewModelDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelDependencies.swift; sourceTree = "<group>"; };
+		290D183B2CF2C0A4006702B4 /* SearchArtistFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -192,11 +196,10 @@
 		290D18142CF1A38D006702B4 /* DiscogsApp */ = {
 			isa = PBXGroup;
 			children = (
+				290D18222CF29E49006702B4 /* Scenes */,
 				290D181A2CF1A391006702B4 /* Configuration */,
 				290D180F2CF1A38D006702B4 /* Preview Content */,
 				290D18102CF1A38D006702B4 /* Assets.xcassets */,
-				290D18112CF1A38D006702B4 /* ContentView.swift */,
-				290D18122CF1A38D006702B4 /* ContentViewModel.swift */,
 				290D18132CF1A38D006702B4 /* DiscogsAppApp.swift */,
 			);
 			path = DiscogsApp;
@@ -218,6 +221,25 @@
 				290D18202CF1A3F1006702B4 /* APIBundle.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		290D18222CF29E49006702B4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				290D18232CF29E50006702B4 /* SearchArtist */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		290D18232CF29E50006702B4 /* SearchArtist */ = {
+			isa = PBXGroup;
+			children = (
+				290D18332CF2A882006702B4 /* SarchArtistView.swift */,
+				290D18352CF2A8D3006702B4 /* SearchArtistViewModel.swift */,
+				290D18392CF2BFFF006702B4 /* SearchViewModelDependencies.swift */,
+				290D183B2CF2C0A4006702B4 /* SearchArtistFactory.swift */,
+			);
+			path = SearchArtist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,11 +387,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				290D18212CF1A3F1006702B4 /* APIBundle.swift in Sources */,
+				290D183C2CF2C0A4006702B4 /* SearchArtistFactory.swift in Sources */,
+				290D183A2CF2BFFF006702B4 /* SearchViewModelDependencies.swift in Sources */,
 				290D181C2CF1A397006702B4 /* AppDelegate.swift in Sources */,
-				290D18152CF1A38D006702B4 /* ContentView.swift in Sources */,
-				290D18162CF1A38D006702B4 /* ContentViewModel.swift in Sources */,
+				290D18342CF2A882006702B4 /* SarchArtistView.swift in Sources */,
 				290D18172CF1A38D006702B4 /* DiscogsAppApp.swift in Sources */,
 				290D181F2CF1A3C4006702B4 /* APIConfig.swift in Sources */,
+				290D18362CF2A8D3006702B4 /* SearchArtistViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

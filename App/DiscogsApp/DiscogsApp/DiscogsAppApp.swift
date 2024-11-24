@@ -13,7 +13,7 @@ struct DiscogsAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchArtistFactory.build()
         }
     }
 }

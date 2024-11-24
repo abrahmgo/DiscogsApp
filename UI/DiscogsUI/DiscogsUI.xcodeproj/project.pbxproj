@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		290D17832CF12349006702B4 /* DiscogsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D177A2CF12349006702B4 /* DiscogsUI.framework */; };
+		290D18262CF29EA9006702B4 /* DiscogsUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D18242CF29EA9006702B4 /* DiscogsUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290D18292CF29EBF006702B4 /* ImageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18282CF29EBF006702B4 /* ImageTitleView.swift */; };
+		290D182C2CF2A0D5006702B4 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 290D182B2CF2A0D5006702B4 /* Nuke */; };
+		290D182E2CF2A0D5006702B4 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 290D182D2CF2A0D5006702B4 /* NukeExtensions */; };
+		290D18302CF2A0D5006702B4 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 290D182F2CF2A0D5006702B4 /* NukeUI */; };
+		290D18322CF2A0D5006702B4 /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 290D18312CF2A0D5006702B4 /* NukeVideo */; };
+		290D18382CF2B993006702B4 /* ImageTitleViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18372CF2B993006702B4 /* ImageTitleViewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,27 +30,12 @@
 /* Begin PBXFileReference section */
 		290D177A2CF12349006702B4 /* DiscogsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiscogsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D17822CF12349006702B4 /* DiscogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D18242CF29EA9006702B4 /* DiscogsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscogsUI.h; sourceTree = "<group>"; };
+		290D18282CF29EBF006702B4 /* ImageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleView.swift; sourceTree = "<group>"; };
+		290D18372CF2B993006702B4 /* ImageTitleViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleViewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		290D178A2CF12349006702B4 /* Exceptions for "DiscogsUI" folder in "DiscogsUI" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				DiscogsUI.h,
-			);
-			target = 290D17792CF12349006702B4 /* DiscogsUI */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		290D177C2CF12349006702B4 /* DiscogsUI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				290D178A2CF12349006702B4 /* Exceptions for "DiscogsUI" folder in "DiscogsUI" target */,
-			);
-			path = DiscogsUI;
-			sourceTree = "<group>";
-		};
 		290D17862CF12349006702B4 /* DiscogsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DiscogsUITests;
@@ -56,6 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18302CF2A0D5006702B4 /* NukeUI in Frameworks */,
+				290D182C2CF2A0D5006702B4 /* Nuke in Frameworks */,
+				290D182E2CF2A0D5006702B4 /* NukeExtensions in Frameworks */,
+				290D18322CF2A0D5006702B4 /* NukeVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +69,7 @@
 		290D17702CF12349006702B4 = {
 			isa = PBXGroup;
 			children = (
-				290D177C2CF12349006702B4 /* DiscogsUI */,
+				290D18252CF29EA9006702B4 /* DiscogsUI */,
 				290D17862CF12349006702B4 /* DiscogsUITests */,
 				290D177B2CF12349006702B4 /* Products */,
 			);
@@ -88,6 +84,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		290D18252CF29EA9006702B4 /* DiscogsUI */ = {
+			isa = PBXGroup;
+			children = (
+				290D18272CF29EAE006702B4 /* Components */,
+				290D18242CF29EA9006702B4 /* DiscogsUI.h */,
+			);
+			path = DiscogsUI;
+			sourceTree = "<group>";
+		};
+		290D18272CF29EAE006702B4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				290D18282CF29EBF006702B4 /* ImageTitleView.swift */,
+				290D18372CF2B993006702B4 /* ImageTitleViewData.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -95,6 +109,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18262CF29EA9006702B4 /* DiscogsUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,11 +129,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				290D177C2CF12349006702B4 /* DiscogsUI */,
-			);
 			name = DiscogsUI;
 			packageProductDependencies = (
+				290D182B2CF2A0D5006702B4 /* Nuke */,
+				290D182D2CF2A0D5006702B4 /* NukeExtensions */,
+				290D182F2CF2A0D5006702B4 /* NukeUI */,
+				290D18312CF2A0D5006702B4 /* NukeVideo */,
 			);
 			productName = DiscogsUI;
 			productReference = 290D177A2CF12349006702B4 /* DiscogsUI.framework */;
@@ -159,6 +175,7 @@
 				TargetAttributes = {
 					290D17792CF12349006702B4 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 					290D17812CF12349006702B4 = {
 						CreatedOnToolsVersion = 16.1;
@@ -174,6 +191,9 @@
 			);
 			mainGroup = 290D17702CF12349006702B4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				290D182A2CF2A0D5006702B4 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 290D177B2CF12349006702B4 /* Products */;
 			projectDirPath = "";
@@ -207,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18292CF29EBF006702B4 /* ImageTitleView.swift in Sources */,
+				290D18382CF2B993006702B4 /* ImageTitleViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -256,6 +279,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -265,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -480,6 +505,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		290D182A2CF2A0D5006702B4 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		290D182B2CF2A0D5006702B4 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 290D182A2CF2A0D5006702B4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		290D182D2CF2A0D5006702B4 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 290D182A2CF2A0D5006702B4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		290D182F2CF2A0D5006702B4 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 290D182A2CF2A0D5006702B4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		290D18312CF2A0D5006702B4 /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 290D182A2CF2A0D5006702B4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeVideo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 290D17712CF12349006702B4 /* Project object */;
 }

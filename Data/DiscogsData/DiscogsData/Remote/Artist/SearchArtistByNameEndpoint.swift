@@ -31,6 +31,7 @@ struct SearchArtistByNameEndpoint: NetworkTargetType {
     
     var queryParams: [String : Any]? {
         return ["query": model.name,
+                "type": "artist",
                 "page": model.page,
                 "per_page": model.perPage]
     }

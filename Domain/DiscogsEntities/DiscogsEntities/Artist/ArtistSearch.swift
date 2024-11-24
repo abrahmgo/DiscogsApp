@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ArtistSearch {
+public struct ArtistSearch: Identifiable {
     
     public let id: Int
     public let name: String
