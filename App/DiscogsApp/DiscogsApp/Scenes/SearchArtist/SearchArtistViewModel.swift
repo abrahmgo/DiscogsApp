@@ -13,6 +13,7 @@ import DiscogsUI
 protocol SearchArtistViewModelType {
     func searchArtist(name: String)
     func setFavorites()
+    func moreArtist()
 }
 
 class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
@@ -29,16 +30,32 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     func searchArtist(name: String) {
         Task {
             do {
-                try await Task.sleep(nanoseconds: UInt64(0.5 * 1_000_000_000))
-                let results = try await dependencies.searchArtistByNameUsecase.execute(name: name)
-                let artists = results.artists.map{ ImageTitleViewData(id: "\($0.id)",
-                                                                      title: $0.name,
-                                                                      urlImage: $0.thumb)}
+                try await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
+                let results = try await dependencies.searchArtistByNameUsecase.execute(name: "Luis Miguel")
+                let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
+                                                              title: $0.name,
+                                                              urlImage: $0.thumb)}
                 await MainActor.run {
                     self.artists = artists
                 }
             } catch {
                 dump(error)
+            }
+        }
+    }
+    
+    func moreArtist() {
+        Task {
+            do {
+                let results = try await dependencies.searchArtistByNameUsecase.more()
+                let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
+                                                              title: $0.name,
+                                                              urlImage: $0.thumb)}
+                await MainActor.run {
+                    self.artists += artists
+                }
+            } catch {
+                
             }
         }
     }

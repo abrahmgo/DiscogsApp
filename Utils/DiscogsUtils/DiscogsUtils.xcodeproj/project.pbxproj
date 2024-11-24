@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		290D171A2CF122D1006702B4 /* DiscogsUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17112CF122D1006702B4 /* DiscogsUtils.framework */; };
+		290D183F2CF2F150006702B4 /* DiscogsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D183D2CF2F150006702B4 /* DiscogsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290D18422CF2F160006702B4 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18412CF2F160006702B4 /* UISearchBar+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,27 +25,11 @@
 /* Begin PBXFileReference section */
 		290D17112CF122D1006702B4 /* DiscogsUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiscogsUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D17192CF122D1006702B4 /* DiscogsUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D183D2CF2F150006702B4 /* DiscogsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscogsUtils.h; sourceTree = "<group>"; };
+		290D18412CF2F160006702B4 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		290D17212CF122D1006702B4 /* Exceptions for "DiscogsUtils" folder in "DiscogsUtils" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				DiscogsUtils.h,
-			);
-			target = 290D17102CF122D1006702B4 /* DiscogsUtils */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		290D17132CF122D1006702B4 /* DiscogsUtils */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				290D17212CF122D1006702B4 /* Exceptions for "DiscogsUtils" folder in "DiscogsUtils" target */,
-			);
-			path = DiscogsUtils;
-			sourceTree = "<group>";
-		};
 		290D171D2CF122D1006702B4 /* DiscogsUtilsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DiscogsUtilsTests;
@@ -73,7 +59,7 @@
 		290D17072CF122D1006702B4 = {
 			isa = PBXGroup;
 			children = (
-				290D17132CF122D1006702B4 /* DiscogsUtils */,
+				290D183E2CF2F150006702B4 /* DiscogsUtils */,
 				290D171D2CF122D1006702B4 /* DiscogsUtilsTests */,
 				290D17122CF122D1006702B4 /* Products */,
 			);
@@ -88,6 +74,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		290D183E2CF2F150006702B4 /* DiscogsUtils */ = {
+			isa = PBXGroup;
+			children = (
+				290D18402CF2F153006702B4 /* Extensions */,
+				290D183D2CF2F150006702B4 /* DiscogsUtils.h */,
+			);
+			path = DiscogsUtils;
+			sourceTree = "<group>";
+		};
+		290D18402CF2F153006702B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				290D18412CF2F160006702B4 /* UISearchBar+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D183F2CF2F150006702B4 /* DiscogsUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				290D17132CF122D1006702B4 /* DiscogsUtils */,
 			);
 			name = DiscogsUtils;
 			packageProductDependencies = (
@@ -159,6 +160,7 @@
 				TargetAttributes = {
 					290D17102CF122D1006702B4 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 					290D17182CF122D1006702B4 = {
 						CreatedOnToolsVersion = 16.1;
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18422CF2F160006702B4 /* UISearchBar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +235,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -256,6 +260,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -265,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
