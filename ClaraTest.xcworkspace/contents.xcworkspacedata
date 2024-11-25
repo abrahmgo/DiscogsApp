@@ -2,30 +2,23 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "group:UI"
-      name = "UI">
-      <FileRef
-         location = "group:DiscogsUI/DiscogsUI.xcodeproj">
-      </FileRef>
-   </Group>
-   <Group
       location = "group:Data"
       name = "Data">
       <FileRef
-         location = "group:DiscogsData/DiscogsData.xcodeproj">
+         location = "group:NetworkCore/NetworkCore.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:NetworkCore/NetworkCore.xcodeproj">
+         location = "group:DiscogsData/DiscogsData.xcodeproj">
       </FileRef>
    </Group>
    <Group
       location = "group:Domain"
       name = "Domain">
       <FileRef
-         location = "group:DiscogsUsecases/DiscogsUsecases.xcodeproj">
+         location = "group:DiscogsEntities/DiscogsEntities.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:DiscogsEntities/DiscogsEntities.xcodeproj">
+         location = "group:DiscogsUsecases/DiscogsUsecases.xcodeproj">
       </FileRef>
    </Group>
    <Group
@@ -33,6 +26,13 @@
       name = "Gateways">
       <FileRef
          location = "group:DiscogsDataSource/DiscogsDataSource.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:UI"
+      name = "UI">
+      <FileRef
+         location = "group:DiscogsUI/DiscogsUI.xcodeproj">
       </FileRef>
    </Group>
    <Group

@@ -5,15 +5,14 @@
 //  Created by Andrés Abraham Bonilla Gómez on 23/11/24.
 //
 
-import DiscogsUsecases
 import DiscogsEntities
-import DiscogsData
 import DiscogsUI
 
 protocol SearchArtistViewModelType {
     func searchArtist(name: String)
     func setFavorites()
     func moreArtist()
+    func goToArtist(id: String)
 }
 
 class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
@@ -22,6 +21,7 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     @Published var searchText: String = ""
 
     private var isSearching: Bool = false
+    private var artistSearch: [ArtistSearch] = []
     private let dependencies: SearchArtistViewModelDependencies
     
     init(dependencies: SearchArtistViewModelDependencies) {
@@ -33,15 +33,16 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
             do {
                 guard !isSearching else { return }
                 isSearching = true
-                try await Task.sleep(nanoseconds: UInt64(2 * 1_000_000_000))
                 let results = try await dependencies.searchArtistByNameUsecase.execute(name: name)
                 let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
                                                               title: $0.name,
                                                               urlImage: $0.thumb)}
-                isSearching = false
+                artistSearch += results
                 await MainActor.run {
                     self.artists = artists
                 }
+                try await Task.sleep(nanoseconds: UInt64(2 * 1_000_000_000))
+                isSearching = false
             } catch {
                 dump(error)
             }
@@ -52,6 +53,7 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
         Task {
             do {
                 let results = try await dependencies.searchArtistByNameUsecase.more()
+                artistSearch += results
                 let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
                                                               title: $0.name,
                                                               urlImage: $0.thumb)}
@@ -66,5 +68,13 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     
     func setFavorites() {
         artists = []
+        artistSearch = []
+    }
+    
+    func goToArtist(id: String) {
+        guard let artist = self.artistSearch.first(where: { "\($0.id)" == id }) else {
+            return
+        }
+        return dependencies.router.goToArtistDetail(with: artist)
     }
 }

@@ -10,16 +10,17 @@ import DiscogsData
 import DiscogsDataSource
 import DiscogsEntities
 import SwiftUI
+import UIKit
 
 struct SearchArtistFactory {
     
-    static func build() -> SarchArtistView {
-        
+    static func build(router: SearchArtistRouterType) -> UIViewController {
         let dataSource = DiscogsDataRemoteDataSource.searchArtistByName
         let searchArtist = SearchArtistByNameUsecase(dataSource: dataSource)
-        let dependencies = SearchArtistViewModelDependencies(searchArtistByNameUsecase: searchArtist)
+        let dependencies = SearchArtistViewModelDependencies(searchArtistByNameUsecase: searchArtist,
+                                                             router: router)
         let viewModel = SearchArtistViewModel(dependencies: dependencies)
         let view = SarchArtistView(viewModel: viewModel)
-        return view
+        return UIHostingController(rootView: view)
     }
 }

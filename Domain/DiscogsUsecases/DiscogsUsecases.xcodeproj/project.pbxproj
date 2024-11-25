@@ -11,9 +11,7 @@
 		290D17FE2CF1A0F7006702B4 /* DiscogsUsecases.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D17FC2CF1A0F7006702B4 /* DiscogsUsecases.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		290D18012CF1A129006702B4 /* SearchArtistByNameUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18002CF1A129006702B4 /* SearchArtistByNameUsecase.swift */; };
 		290D18042CF1A136006702B4 /* DiscogsDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18032CF1A136006702B4 /* DiscogsDataSource.framework */; };
-		290D18052CF1A136006702B4 /* DiscogsDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18032CF1A136006702B4 /* DiscogsDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		290D18082CF1A13A006702B4 /* DiscogsEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18072CF1A13A006702B4 /* DiscogsEntities.framework */; };
-		290D18092CF1A13A006702B4 /* DiscogsEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18072CF1A13A006702B4 /* DiscogsEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		290D185F2CF4DED0006702B4 /* GetArtistByURLUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185E2CF4DED0006702B4 /* GetArtistByURLUsecase.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,21 +24,6 @@
 			remoteInfo = DiscogsUsecases;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		290D18062CF1A137006702B4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				290D18092CF1A13A006702B4 /* DiscogsEntities.framework in Embed Frameworks */,
-				290D18052CF1A136006702B4 /* DiscogsDataSource.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		290D16CB2CF1229E006702B4 /* DiscogsUsecases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiscogsUsecases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +132,6 @@
 				290D16C72CF1229E006702B4 /* Sources */,
 				290D16C82CF1229E006702B4 /* Frameworks */,
 				290D16C92CF1229E006702B4 /* Resources */,
-				290D18062CF1A137006702B4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

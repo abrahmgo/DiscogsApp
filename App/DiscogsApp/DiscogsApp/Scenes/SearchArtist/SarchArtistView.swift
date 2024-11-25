@@ -18,27 +18,33 @@ struct SarchArtistView: View {
     }
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(viewModel.artists, id: \.id) { data in
-                    ImageTitleView(model: data)
-                        .frame(maxWidth: .infinity, maxHeight: 50)
-                        .onAppear() {
-                            if viewModel.artists.last?.id == data.id {
-                                viewModel.moreArtist()
-                            }
-                        }
-                }
-            }
-            .listStyle(.plain)
-            .searchable(text: $viewModel.searchText, prompt: "Look for something")
-            .onChange(of: viewModel.searchText) { searchText in
-                if searchText.isEmpty {
-                    viewModel.setFavorites()
-                } else {
-                    viewModel.searchArtist(name: searchText)
-                }
+        List {
+            ForEach(0..<viewModel.artists.count, id: \.self) { item in
+                paint(data: viewModel.artists[item])
             }
         }
+        .listStyle(.grouped)
+        .searchable(text: $viewModel.searchText, prompt: "Look for something")
+        .onChange(of: viewModel.searchText) { searchText in
+            if searchText.isEmpty {
+                viewModel.setFavorites()
+            } else {
+                viewModel.searchArtist(name: searchText)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func paint(data: ImageTitleViewDataType) -> some View {
+        ImageTitleView(model: data)
+            .frame(maxWidth: .infinity, maxHeight: 50)
+            .onTapGesture {
+                viewModel.goToArtist(id: data.id)
+            }
+            .onAppear() {
+                if viewModel.artists.last?.id == data.id {
+                    viewModel.moreArtist()
+                }
+            }
     }
 }

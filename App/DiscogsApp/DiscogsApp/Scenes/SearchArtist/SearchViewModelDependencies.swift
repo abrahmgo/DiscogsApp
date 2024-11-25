@@ -10,4 +10,5 @@ import DiscogsUsecases
 struct SearchArtistViewModelDependencies {
     
     let searchArtistByNameUsecase: SearchArtistByNameUsecaseType
+    let router: SearchArtistRouterType
 }
