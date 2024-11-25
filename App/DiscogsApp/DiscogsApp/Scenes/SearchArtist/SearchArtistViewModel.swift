@@ -20,7 +20,8 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     
     @Published var artists: [ImageTitleViewDataType] = []
     @Published var searchText: String = ""
-    
+
+    private var isSearching: Bool = false
     private let dependencies: SearchArtistViewModelDependencies
     
     init(dependencies: SearchArtistViewModelDependencies) {
@@ -30,11 +31,14 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     func searchArtist(name: String) {
         Task {
             do {
-                try await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
-                let results = try await dependencies.searchArtistByNameUsecase.execute(name: "Luis Miguel")
+                guard !isSearching else { return }
+                isSearching = true
+                try await Task.sleep(nanoseconds: UInt64(2 * 1_000_000_000))
+                let results = try await dependencies.searchArtistByNameUsecase.execute(name: name)
                 let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
                                                               title: $0.name,
                                                               urlImage: $0.thumb)}
+                isSearching = false
                 await MainActor.run {
                     self.artists = artists
                 }
