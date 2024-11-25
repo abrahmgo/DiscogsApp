@@ -16,7 +16,6 @@
 		290D17BF2CF124BF006702B4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B42CF124BF006702B4 /* NetworkError.swift */; };
 		290D17C02CF124BF006702B4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B52CF124BF006702B4 /* NetworkService.swift */; };
 		290D17C12CF124BF006702B4 /* NetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17B62CF124BF006702B4 /* NetworkTargetType.swift */; };
-		290D17F42CF19B33006702B4 /* NetworkCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17F32CF19B33006702B4 /* NetworkCoreData.swift */; };
 		290D17F62CF19B66006702B4 /* NetworkCorePagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17F52CF19B66006702B4 /* NetworkCorePagination.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		290D17B52CF124BF006702B4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		290D17B62CF124BF006702B4 /* NetworkTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTargetType.swift; sourceTree = "<group>"; };
 		290D17B82CF124BF006702B4 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
-		290D17F32CF19B33006702B4 /* NetworkCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreData.swift; sourceTree = "<group>"; };
 		290D17F52CF19B66006702B4 /* NetworkCorePagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCorePagination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +93,6 @@
 			children = (
 				290D17B02CF124BF006702B4 /* MockNetworkService.swift */,
 				290D17B12CF124BF006702B4 /* NetworkCoreAPI.swift */,
-				290D17F32CF19B33006702B4 /* NetworkCoreData.swift */,
 				290D17F52CF19B66006702B4 /* NetworkCorePagination.swift */,
 				290D17B22CF124BF006702B4 /* NetworkCoreConfig.swift */,
 				290D17B32CF124BF006702B4 /* NetworkCoreSampleData.swift */,
@@ -237,7 +234,6 @@
 				290D17BD2CF124BF006702B4 /* NetworkCoreConfig.swift in Sources */,
 				290D17BE2CF124BF006702B4 /* NetworkCoreSampleData.swift in Sources */,
 				290D17BF2CF124BF006702B4 /* NetworkError.swift in Sources */,
-				290D17F42CF19B33006702B4 /* NetworkCoreData.swift in Sources */,
 				290D17C02CF124BF006702B4 /* NetworkService.swift in Sources */,
 				290D17F62CF19B66006702B4 /* NetworkCorePagination.swift in Sources */,
 				290D17C12CF124BF006702B4 /* NetworkTargetType.swift in Sources */,

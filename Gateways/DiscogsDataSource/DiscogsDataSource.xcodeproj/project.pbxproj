@@ -11,6 +11,7 @@
 		290D17CF2CF1928F006702B4 /* DiscogsDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D17CD2CF1928F006702B4 /* DiscogsDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		290D17D22CF192D3006702B4 /* SearchArtistByNameRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17D12CF192D3006702B4 /* SearchArtistByNameRemoteDataSource.swift */; };
 		290D17D52CF19317006702B4 /* DiscogsEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17D42CF19317006702B4 /* DiscogsEntities.framework */; };
+		290D18512CF4D7FB006702B4 /* GetArtistByURLRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18502CF4D7FB006702B4 /* GetArtistByURLRemoteDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		290D17CD2CF1928F006702B4 /* DiscogsDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscogsDataSource.h; sourceTree = "<group>"; };
 		290D17D12CF192D3006702B4 /* SearchArtistByNameRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistByNameRemoteDataSource.swift; sourceTree = "<group>"; };
 		290D17D42CF19317006702B4 /* DiscogsEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290D18502CF4D7FB006702B4 /* GetArtistByURLRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLRemoteDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				290D17D12CF192D3006702B4 /* SearchArtistByNameRemoteDataSource.swift */,
+				290D18502CF4D7FB006702B4 /* GetArtistByURLRemoteDataSource.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D18512CF4D7FB006702B4 /* GetArtistByURLRemoteDataSource.swift in Sources */,
 				290D17D22CF192D3006702B4 /* SearchArtistByNameRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

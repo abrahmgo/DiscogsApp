@@ -42,4 +42,3 @@ struct SearchArtistByNameEndpoint: NetworkTargetType {
         return nil
     }
 }
-

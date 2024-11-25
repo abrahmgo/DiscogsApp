@@ -5,8 +5,16 @@
 //  Created by Andrés Abraham Bonilla Gómez on 22/11/24.
 //
 
+import NetworkCore
 
 struct SearchArtistByNameResponseModel: Decodable {
+    
+    let results: [SearchArtistByNameResultsResponseModel]
+    let pagination: NetworkCorePagination
+}
+
+
+struct SearchArtistByNameResultsResponseModel: Decodable {
     
     let id: Int
     let type: String

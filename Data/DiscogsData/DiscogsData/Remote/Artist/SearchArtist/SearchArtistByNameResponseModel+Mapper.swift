@@ -7,7 +7,7 @@
 
 import DiscogsEntities
 
-extension SearchArtistByNameResponseModel {
+extension SearchArtistByNameResultsResponseModel {
     
     func mapToSearchArtist() -> ArtistSearch {
         return ArtistSearch(id: id,

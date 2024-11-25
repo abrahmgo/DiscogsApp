@@ -21,13 +21,13 @@ struct SearchArtistByNameAPI: SearchArtistByNameRemoteDataSource {
         let model: SearchArtistByNameRequestModel = SearchArtistByNameRequestModel(page: page,
                                                                                    name: name)
         let endpoint: SearchArtistByNameEndpoint = SearchArtistByNameEndpoint(model: model)
-        let request: NetworkCoreData<[SearchArtistByNameResponseModel]> = try await service.request(target: endpoint)
+        let request: SearchArtistByNameResponseModel = try await service.request(target: endpoint)
         
-        guard let data = request.results else {
+        guard !request.results.isEmpty else {
             throw DiscogsError.withoutResults
         }
         
-        let result = ArtistSearchInfo(artists: data.map{$0.mapToSearchArtist()},
+        let result = ArtistSearchInfo(artists: request.results.map{$0.mapToSearchArtist()},
                                       pagination: request.pagination.mapToPagination())
         return result
     }

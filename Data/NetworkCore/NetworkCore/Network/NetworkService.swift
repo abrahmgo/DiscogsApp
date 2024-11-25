@@ -88,9 +88,9 @@ struct NetworkService: NetworkServiceType {
     private func prepareURL(target: NetworkTargetType) -> URL? {
         var newBaseURL = ""
         if target.baseURL.isEmpty {
-            newBaseURL =  baseURL + target.path
+            newBaseURL = baseURL + target.path
             var urlComponents = URLComponents(string: newBaseURL)
-            let tokenQueryItem = [URLQueryItem(name: "token", value: token)]
+            let tokenQueryItem = getTokenQueryParam()
             let queryItems = target.queryParams?.map({ (key, value) in
                 return URLQueryItem(name: key, value: String(describing: value) )
             })
@@ -98,8 +98,14 @@ struct NetworkService: NetworkServiceType {
             return urlComponents?.url
         } else {
             newBaseURL = target.baseURL + target.path
-            let url = URLComponents(string: newBaseURL)
+            var url = URLComponents(string: newBaseURL)
+            let tokenQueryItem = getTokenQueryParam()
+            url?.queryItems = tokenQueryItem
             return url?.url
         }
+    }
+    
+    private func getTokenQueryParam() -> [URLQueryItem] {
+        return [URLQueryItem(name: "token", value: token)]
     }
 }

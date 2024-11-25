@@ -11,17 +11,32 @@ public struct ArtistInfo {
     
     public let id: Int
     public let name: String
-    public let realName: String
     public let profile: String
-    public let releases: String
-    public let urls: [String]
+    public let releaseURL: String
+    public let images: [AtistImage]
     
-    public init(id: Int, name: String, realName: String, profile: String, releases: String, urls: [String]) {
+    public init(id: Int, name: String, profile: String, releaseURL: String, images: [AtistImage]) {
         self.id = id
         self.name = name
-        self.realName = realName
         self.profile = profile
-        self.releases = releases
-        self.urls = urls
+        self.releaseURL = releaseURL
+        self.images = images
     }
+}
+
+public struct AtistImage {
+    
+    public let type: DiscogsType
+    public let url: String
+    
+    public init(type: DiscogsType, url: String) {
+        self.type = type
+        self.url = url
+    }
+}
+
+public enum DiscogsType: String {
+    case primary
+    case senconday
+    case unknown
 }

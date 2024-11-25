@@ -19,6 +19,11 @@
 		290D17F02CF1942D006702B4 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17EF2CF1942D006702B4 /* NetworkCore.framework */; };
 		290D17F92CF19F81006702B4 /* NetworkCorePagination+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D17F82CF19F81006702B4 /* NetworkCorePagination+Mapper.swift */; };
 		290D180B2CF1A1D3006702B4 /* DiscogsDataRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D180A2CF1A1D3006702B4 /* DiscogsDataRemoteDataSource.swift */; };
+		290D18552CF4D852006702B4 /* GetArtistByURLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18542CF4D852006702B4 /* GetArtistByURLEndpoint.swift */; };
+		290D18572CF4D8B4006702B4 /* GetArtistByURLRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18562CF4D8B4006702B4 /* GetArtistByURLRequestModel.swift */; };
+		290D18592CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18582CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift */; };
+		290D185B2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185A2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift */; };
+		290D185D2CF4D8D7006702B4 /* GetArtistByURLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185C2CF4D8D7006702B4 /* GetArtistByURLAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		290D17EF2CF1942D006702B4 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D17F82CF19F81006702B4 /* NetworkCorePagination+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkCorePagination+Mapper.swift"; sourceTree = "<group>"; };
 		290D180A2CF1A1D3006702B4 /* DiscogsDataRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsDataRemoteDataSource.swift; sourceTree = "<group>"; };
+		290D18542CF4D852006702B4 /* GetArtistByURLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLEndpoint.swift; sourceTree = "<group>"; };
+		290D18562CF4D8B4006702B4 /* GetArtistByURLRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLRequestModel.swift; sourceTree = "<group>"; };
+		290D18582CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLResponseModel.swift; sourceTree = "<group>"; };
+		290D185A2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetArtistByURLResponseModel+Mapper.swift"; sourceTree = "<group>"; };
+		290D185C2CF4D8D7006702B4 /* GetArtistByURLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -128,11 +138,8 @@
 		290D17E42CF193BE006702B4 /* Artist */ = {
 			isa = PBXGroup;
 			children = (
-				290D17E52CF193D7006702B4 /* SearchArtistByNameAPI.swift */,
-				290D17E72CF193F9006702B4 /* SearchArtistByNameEndpoint.swift */,
-				290D17E92CF19405006702B4 /* SearchArtistByNameRequestModel.swift */,
-				290D17EB2CF1940A006702B4 /* SearchArtistByNameResponseModel.swift */,
-				290D17ED2CF19422006702B4 /* SearchArtistByNameResponseModel+Mapper.swift */,
+				290D18532CF4D834006702B4 /* SearchArtist */,
+				290D18522CF4D82B006702B4 /* GetArtist */,
 			);
 			path = Artist;
 			sourceTree = "<group>";
@@ -143,6 +150,30 @@
 				290D17F82CF19F81006702B4 /* NetworkCorePagination+Mapper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		290D18522CF4D82B006702B4 /* GetArtist */ = {
+			isa = PBXGroup;
+			children = (
+				290D18542CF4D852006702B4 /* GetArtistByURLEndpoint.swift */,
+				290D185C2CF4D8D7006702B4 /* GetArtistByURLAPI.swift */,
+				290D185A2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift */,
+				290D18562CF4D8B4006702B4 /* GetArtistByURLRequestModel.swift */,
+				290D18582CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift */,
+			);
+			path = GetArtist;
+			sourceTree = "<group>";
+		};
+		290D18532CF4D834006702B4 /* SearchArtist */ = {
+			isa = PBXGroup;
+			children = (
+				290D17E52CF193D7006702B4 /* SearchArtistByNameAPI.swift */,
+				290D17E72CF193F9006702B4 /* SearchArtistByNameEndpoint.swift */,
+				290D17E92CF19405006702B4 /* SearchArtistByNameRequestModel.swift */,
+				290D17EB2CF1940A006702B4 /* SearchArtistByNameResponseModel.swift */,
+				290D17ED2CF19422006702B4 /* SearchArtistByNameResponseModel+Mapper.swift */,
+			);
+			path = SearchArtist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,12 +295,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				290D17EE2CF19422006702B4 /* SearchArtistByNameResponseModel+Mapper.swift in Sources */,
+				290D185D2CF4D8D7006702B4 /* GetArtistByURLAPI.swift in Sources */,
 				290D17E82CF193F9006702B4 /* SearchArtistByNameEndpoint.swift in Sources */,
+				290D18552CF4D852006702B4 /* GetArtistByURLEndpoint.swift in Sources */,
 				290D17F92CF19F81006702B4 /* NetworkCorePagination+Mapper.swift in Sources */,
+				290D18572CF4D8B4006702B4 /* GetArtistByURLRequestModel.swift in Sources */,
+				290D18592CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift in Sources */,
 				290D17EC2CF1940A006702B4 /* SearchArtistByNameResponseModel.swift in Sources */,
 				290D180B2CF1A1D3006702B4 /* DiscogsDataRemoteDataSource.swift in Sources */,
 				290D17EA2CF19405006702B4 /* SearchArtistByNameRequestModel.swift in Sources */,
 				290D17E62CF193D7006702B4 /* SearchArtistByNameAPI.swift in Sources */,
+				290D185B2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
