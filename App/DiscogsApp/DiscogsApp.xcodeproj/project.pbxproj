@@ -35,6 +35,10 @@
 		290D18362CF2A8D3006702B4 /* SearchArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18352CF2A8D3006702B4 /* SearchArtistViewModel.swift */; };
 		290D183A2CF2BFFF006702B4 /* SearchViewModelDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18392CF2BFFF006702B4 /* SearchViewModelDependencies.swift */; };
 		290D183C2CF2C0A4006702B4 /* SearchArtistFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D183B2CF2C0A4006702B4 /* SearchArtistFactory.swift */; };
+		290D18452CF4CEA0006702B4 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18442CF4CEA0006702B4 /* ArtistView.swift */; };
+		290D18472CF4CEA5006702B4 /* ArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18462CF4CEA5006702B4 /* ArtistViewModel.swift */; };
+		290D18492CF4CEA9006702B4 /* ArtistFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18482CF4CEA9006702B4 /* ArtistFactory.swift */; };
+		290D184B2CF4CEAF006702B4 /* ArtistDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D184A2CF4CEAF006702B4 /* ArtistDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,10 @@
 		290D18352CF2A8D3006702B4 /* SearchArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistViewModel.swift; sourceTree = "<group>"; };
 		290D18392CF2BFFF006702B4 /* SearchViewModelDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelDependencies.swift; sourceTree = "<group>"; };
 		290D183B2CF2C0A4006702B4 /* SearchArtistFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistFactory.swift; sourceTree = "<group>"; };
+		290D18442CF4CEA0006702B4 /* ArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistView.swift; sourceTree = "<group>"; };
+		290D18462CF4CEA5006702B4 /* ArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewModel.swift; sourceTree = "<group>"; };
+		290D18482CF4CEA9006702B4 /* ArtistFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistFactory.swift; sourceTree = "<group>"; };
+		290D184A2CF4CEAF006702B4 /* ArtistDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -226,6 +234,7 @@
 		290D18222CF29E49006702B4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				290D18432CF4CE97006702B4 /* Artist */,
 				290D18232CF29E50006702B4 /* SearchArtist */,
 			);
 			path = Scenes;
@@ -240,6 +249,17 @@
 				290D183B2CF2C0A4006702B4 /* SearchArtistFactory.swift */,
 			);
 			path = SearchArtist;
+			sourceTree = "<group>";
+		};
+		290D18432CF4CE97006702B4 /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				290D18442CF4CEA0006702B4 /* ArtistView.swift */,
+				290D18462CF4CEA5006702B4 /* ArtistViewModel.swift */,
+				290D18482CF4CEA9006702B4 /* ArtistFactory.swift */,
+				290D184A2CF4CEAF006702B4 /* ArtistDependencies.swift */,
+			);
+			path = Artist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,13 +407,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				290D18212CF1A3F1006702B4 /* APIBundle.swift in Sources */,
+				290D18492CF4CEA9006702B4 /* ArtistFactory.swift in Sources */,
 				290D183C2CF2C0A4006702B4 /* SearchArtistFactory.swift in Sources */,
 				290D183A2CF2BFFF006702B4 /* SearchViewModelDependencies.swift in Sources */,
 				290D181C2CF1A397006702B4 /* AppDelegate.swift in Sources */,
 				290D18342CF2A882006702B4 /* SarchArtistView.swift in Sources */,
+				290D18472CF4CEA5006702B4 /* ArtistViewModel.swift in Sources */,
 				290D18172CF1A38D006702B4 /* DiscogsAppApp.swift in Sources */,
 				290D181F2CF1A3C4006702B4 /* APIConfig.swift in Sources */,
+				290D184B2CF4CEAF006702B4 /* ArtistDependencies.swift in Sources */,
 				290D18362CF2A8D3006702B4 /* SearchArtistViewModel.swift in Sources */,
+				290D18452CF4CEA0006702B4 /* ArtistView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

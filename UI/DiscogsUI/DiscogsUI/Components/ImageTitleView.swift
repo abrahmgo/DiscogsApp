@@ -29,29 +29,13 @@ public struct ImageTitleView: View {
     
     public var body: some View {
         HStack(spacing: 5) {
-            makeImage(url: model.urlImage)
+            ImageView(url: model.urlImage)
+                .frame(width: 50, height: 50)
+                .padding()
             Text(model.title)
                 .font(.headline)
             Spacer()
-        }
-        .padding()
-    }
-    
-    func makeImage(url: String) -> some View {
-        LazyImage(url: URL(string: url)) { state in
-            if let image = state.image {
-                image
-                    .resizable()
-                    .frame(width: 50, height: 50)
-                    .aspectRatio(contentMode: .fill)
-                    .clipShape(Circle())
-            } else {
-                Color.gray.opacity(0.2)
-                    .frame(width: 50, height: 50)
-            }
-        }
-        .pipeline(pipeline)
-        .frame(height: 320)
+        }.frame(maxWidth: .infinity)
     }
 }
 
