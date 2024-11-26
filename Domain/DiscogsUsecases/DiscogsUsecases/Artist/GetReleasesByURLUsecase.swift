@@ -18,7 +18,7 @@ public class GetReleasesByURLUsecase: GetReleasesByURLUsecaseType {
     private let dataSource: GetReleasesByURLRemoteDataSource
     private var page: Int = 1
     private var totalPages: Int = 0
-    private var nextUrl: String = ""
+    private var nextUrl: String?
     
     public init(dataSource: GetReleasesByURLRemoteDataSource) {
         self.dataSource = dataSource
@@ -27,15 +27,15 @@ public class GetReleasesByURLUsecase: GetReleasesByURLUsecaseType {
     public func execute(url: String) async throws -> [ArtistRelease] {
         let data = try await dataSource.execute(url: url)
         totalPages = data.pagination.total
-        nextUrl = data.pagination.urls.next
+        nextUrl = data.pagination.urls?.next
         return data.releases
     }
     
     public func more() async throws -> [ArtistRelease] {
-        if page <= totalPages {
+        if page <= totalPages, let url = nextUrl {
             page += 1
-            let data = try await dataSource.execute(url: nextUrl)
-            nextUrl = data.pagination.urls.next
+            let data = try await dataSource.execute(url: url)
+            nextUrl = data.pagination.urls?.next
             return data.releases
         } else {
             return []

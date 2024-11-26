@@ -39,6 +39,9 @@
 		297F4BD92CF51B0900BC902A /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297F4BD82CF51B0900BC902A /* NetworkCore.framework */; };
 		297F4BDA2CF51B0900BC902A /* NetworkCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 297F4BD82CF51B0900BC902A /* NetworkCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		297F4BE22CF5420800BC902A /* ArtistCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BE12CF5420800BC902A /* ArtistCoordinator.swift */; };
+		297F4BF62CF65DA400BC902A /* ReleasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF52CF65DA400BC902A /* ReleasesView.swift */; };
+		297F4BF82CF65DAB00BC902A /* ReleasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF72CF65DAB00BC902A /* ReleasesViewModel.swift */; };
+		297F4BFA2CF65DB200BC902A /* RelesesDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF92CF65DB200BC902A /* RelesesDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		297F4BD52CF51B0400BC902A /* DiscogsUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		297F4BD82CF51B0900BC902A /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		297F4BE12CF5420800BC902A /* ArtistCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCoordinator.swift; sourceTree = "<group>"; };
+		297F4BF52CF65DA400BC902A /* ReleasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesView.swift; sourceTree = "<group>"; };
+		297F4BF72CF65DAB00BC902A /* ReleasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesViewModel.swift; sourceTree = "<group>"; };
+		297F4BF92CF65DB200BC902A /* RelesesDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelesesDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -193,6 +199,7 @@
 		297F4BA42CF51A8C00BC902A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				297F4BF42CF65D6500BC902A /* Releases */,
 				297F4BA92CF51AA900BC902A /* Artist */,
 				297F4BB02CF51AA900BC902A /* SearchArtist */,
 			);
@@ -254,6 +261,16 @@
 				297F4BC22CF51AED00BC902A /* DiscogsData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		297F4BF42CF65D6500BC902A /* Releases */ = {
+			isa = PBXGroup;
+			children = (
+				297F4BF52CF65DA400BC902A /* ReleasesView.swift */,
+				297F4BF72CF65DAB00BC902A /* ReleasesViewModel.swift */,
+				297F4BF92CF65DB200BC902A /* RelesesDependencies.swift */,
+			);
+			path = Releases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +419,9 @@
 			files = (
 				297F4B8B2CF51A5B00BC902A /* AppDelegate.swift in Sources */,
 				297F4BE22CF5420800BC902A /* ArtistCoordinator.swift in Sources */,
+				297F4BFA2CF65DB200BC902A /* RelesesDependencies.swift in Sources */,
+				297F4BF82CF65DAB00BC902A /* ReleasesViewModel.swift in Sources */,
+				297F4BF62CF65DA400BC902A /* ReleasesView.swift in Sources */,
 				297F4BB12CF51AA900BC902A /* ArtistView.swift in Sources */,
 				297F4BB22CF51AA900BC902A /* SearchArtistFactory.swift in Sources */,
 				297F4BB32CF51AA900BC902A /* SarchArtistView.swift in Sources */,

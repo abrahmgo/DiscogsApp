@@ -28,7 +28,7 @@ struct SearchArtistByNameAPI: SearchArtistByNameRemoteDataSource {
         }
         
         let result = ArtistSearchInfo(artists: request.results.map{$0.mapToSearchArtist()},
-                                      pagination: request.pagination.mapToPagination())
+                                      pagination: request.pagination?.mapToPagination())
         return result
     }
 }

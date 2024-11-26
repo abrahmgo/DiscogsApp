@@ -13,9 +13,9 @@ public struct Pagination {
     public let pages: Int
     public let perPage: Int
     public let total: Int
-    public let urls: PaginationURLs
+    public let urls: PaginationURLs?
     
-    public init(page: Int, pages: Int, perPage: Int, total: Int, urls: PaginationURLs) {
+    public init(page: Int, pages: Int, perPage: Int, total: Int, urls: PaginationURLs? = nil) {
         self.page = page
         self.pages = pages
         self.perPage = perPage

@@ -10,7 +10,7 @@ import NetworkCore
 struct SearchArtistByNameResponseModel: Decodable {
     
     let results: [SearchArtistByNameResultsResponseModel]
-    let pagination: NetworkCorePagination
+    let pagination: NetworkCorePagination?
 }
 
 

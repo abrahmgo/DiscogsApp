@@ -12,4 +12,5 @@ struct ArtistDependencies {
     
     let artist: ArtistSearch
     let infoArtist: GetArtistByURLUsecaseType
+    let getReleases: GetReleasesByURLUsecaseType
 }

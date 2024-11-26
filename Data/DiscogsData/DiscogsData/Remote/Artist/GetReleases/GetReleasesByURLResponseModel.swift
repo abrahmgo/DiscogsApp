@@ -16,8 +16,8 @@ struct GetReleasesByURLResponseModel: Decodable {
 struct GetReleasesResponseModel: Decodable {
     
     let id: Int
-    let format: String
-    let label: String
+    let format: String?
+    let label: String?
     let title: String
     let year: Int
     let thumb: String

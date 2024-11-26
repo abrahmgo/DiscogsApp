@@ -30,7 +30,9 @@ struct GetReleasesByURLEndpoint: NetworkTargetType {
     var body: Data?
     
     var queryParams: [String : Any]? {
-        return nil
+        return ["per_page": 30,
+                "sort": "year",
+                "sort_order": "desc"]
     }
     
     var headers: [String : String]?

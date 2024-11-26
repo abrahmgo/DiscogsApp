@@ -27,7 +27,7 @@ public class SearchArtistByNameUsecase: SearchArtistByNameUsecaseType {
     public func execute(name: String) async throws -> [ArtistSearch] {
         let data = try await dataSource.execute(name: name, page: page)
         self.name = name
-        totalPages = data.pagination.total
+        totalPages = data.pagination?.total ?? 0
         return data.artists
     }
     

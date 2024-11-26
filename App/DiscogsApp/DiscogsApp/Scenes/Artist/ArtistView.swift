@@ -31,16 +31,18 @@ struct ArtistView: View {
                 Text("Releases")
                     .font(.system(size: 28)
                         .weight(.medium))
-                List {
-                    ForEach(0..<viewModel.releases.count, id: \.self) { item in
-                        InfoDetailView(model: viewModel.releases[item])
-                    }
+                ForEach(0..<viewModel.releases.count, id: \.self) { item in
+                    InfoDetailView(model: viewModel.releases[item])
+                        .frame(maxWidth: .infinity, maxHeight: 100)
+                        .clipped()
                 }
             }
             .padding()
             .safeAreaInset(edge: .top, content: {
                 ImageView(url: viewModel.model.coverImageURL)
                     .frame(maxWidth: .infinity, maxHeight: 400)
+                    .clipped()
+                
             })
         }
         .onAppear() {

@@ -27,9 +27,9 @@ public struct ArtistSearch: Identifiable {
 public struct ArtistSearchInfo {
     
     public let artists: [ArtistSearch]
-    public let pagination: Pagination
+    public let pagination: Pagination?
     
-    public init(artists: [ArtistSearch], pagination: Pagination) {
+    public init(artists: [ArtistSearch], pagination: Pagination? = nil) {
         self.artists = artists
         self.pagination = pagination
     }

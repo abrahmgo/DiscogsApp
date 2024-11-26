@@ -100,7 +100,10 @@ struct NetworkService: NetworkServiceType {
             newBaseURL = target.baseURL + target.path
             var url = URLComponents(string: newBaseURL)
             let tokenQueryItem = getTokenQueryParam()
-            url?.queryItems = tokenQueryItem
+            let queryItems = target.queryParams?.map({ (key, value) in
+                return URLQueryItem(name: key, value: String(describing: value) )
+            })
+            url?.queryItems = tokenQueryItem + (queryItems ?? [])
             return url?.url
         }
     }

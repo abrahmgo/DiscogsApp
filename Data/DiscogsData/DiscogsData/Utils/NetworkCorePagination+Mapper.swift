@@ -15,7 +15,7 @@ extension NetworkCorePagination {
                           pages: pages,
                           perPage: per_page,
                           total: items,
-                          urls: urls.mapToPaginationURLs())
+                          urls: urls?.mapToPaginationURLs())
     }
 }
 

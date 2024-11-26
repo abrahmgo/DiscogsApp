@@ -12,7 +12,7 @@ public struct NetworkCorePagination: Codable {
     public let pages: Int
     public let per_page: Int
     public let items: Int
-    public let urls: NetworkCorePaginationURLs
+    public let urls: NetworkCorePaginationURLs?
 }
 
 public struct NetworkCorePaginationURLs: Codable {

@@ -28,6 +28,16 @@ class ArtistViewModel: ObservableObject {
                 await MainActor.run {
                     self.model = model
                 }
+                
+                let releasesInfo = try await dependencies.getReleases.execute(url: artist.releaseURL)
+                let releases = releasesInfo.map({InfoDetailViewData(title: $0.title,
+                                                                    subtitle: $0.subtilte,
+                                                                    subtitle2: $0.format,
+                                                                    subtitle3: "\($0.year)",
+                                                                    urlImage: $0.imageURL)})
+                await MainActor.run {
+                    self.releases = releases
+                }
             } catch {
                 
             }
