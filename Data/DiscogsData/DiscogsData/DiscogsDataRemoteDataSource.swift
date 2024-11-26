@@ -17,5 +17,9 @@ public struct DiscogsDataRemoteDataSource {
     public static var getArtistByURL: GetArtistByURLRemoteDataSource {
          return GetArtistByURLAPI(service: NetworkCoreAPIConfig.shared.networkService)
     }
+    
+    public static var getReleaseByURL: GetReleasesByURLRemoteDataSource {
+        return GetReleasesByURLAPI(service: NetworkCoreAPIConfig.shared.networkService)
+    }
 }
 

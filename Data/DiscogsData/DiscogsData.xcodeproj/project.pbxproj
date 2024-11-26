@@ -24,6 +24,11 @@
 		290D18592CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18582CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift */; };
 		290D185B2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185A2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift */; };
 		290D185D2CF4D8D7006702B4 /* GetArtistByURLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185C2CF4D8D7006702B4 /* GetArtistByURLAPI.swift */; };
+		297F4BE92CF5718A00BC902A /* GetReleasesByURLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BE82CF5718A00BC902A /* GetReleasesByURLEndpoint.swift */; };
+		297F4BEB2CF571B700BC902A /* GetReleasesByURLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BEA2CF571B700BC902A /* GetReleasesByURLAPI.swift */; };
+		297F4BED2CF571EB00BC902A /* GetReleasesByURLRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BEC2CF571EB00BC902A /* GetReleasesByURLRequestModel.swift */; };
+		297F4BEF2CF571F200BC902A /* GetReleasesByURLResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BEE2CF571F200BC902A /* GetReleasesByURLResponseModel.swift */; };
+		297F4BF12CF571FD00BC902A /* GetReleasesByURLResponseModel+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF02CF571FD00BC902A /* GetReleasesByURLResponseModel+Mapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		290D18582CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLResponseModel.swift; sourceTree = "<group>"; };
 		290D185A2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetArtistByURLResponseModel+Mapper.swift"; sourceTree = "<group>"; };
 		290D185C2CF4D8D7006702B4 /* GetArtistByURLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLAPI.swift; sourceTree = "<group>"; };
+		297F4BE82CF5718A00BC902A /* GetReleasesByURLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLEndpoint.swift; sourceTree = "<group>"; };
+		297F4BEA2CF571B700BC902A /* GetReleasesByURLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLAPI.swift; sourceTree = "<group>"; };
+		297F4BEC2CF571EB00BC902A /* GetReleasesByURLRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLRequestModel.swift; sourceTree = "<group>"; };
+		297F4BEE2CF571F200BC902A /* GetReleasesByURLResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLResponseModel.swift; sourceTree = "<group>"; };
+		297F4BF02CF571FD00BC902A /* GetReleasesByURLResponseModel+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetReleasesByURLResponseModel+Mapper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -138,6 +148,7 @@
 		290D17E42CF193BE006702B4 /* Artist */ = {
 			isa = PBXGroup;
 			children = (
+				297F4BE72CF5715300BC902A /* GetReleases */,
 				290D18532CF4D834006702B4 /* SearchArtist */,
 				290D18522CF4D82B006702B4 /* GetArtist */,
 			);
@@ -174,6 +185,18 @@
 				290D17ED2CF19422006702B4 /* SearchArtistByNameResponseModel+Mapper.swift */,
 			);
 			path = SearchArtist;
+			sourceTree = "<group>";
+		};
+		297F4BE72CF5715300BC902A /* GetReleases */ = {
+			isa = PBXGroup;
+			children = (
+				297F4BE82CF5718A00BC902A /* GetReleasesByURLEndpoint.swift */,
+				297F4BEA2CF571B700BC902A /* GetReleasesByURLAPI.swift */,
+				297F4BEC2CF571EB00BC902A /* GetReleasesByURLRequestModel.swift */,
+				297F4BEE2CF571F200BC902A /* GetReleasesByURLResponseModel.swift */,
+				297F4BF02CF571FD00BC902A /* GetReleasesByURLResponseModel+Mapper.swift */,
+			);
+			path = GetReleases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297F4BEF2CF571F200BC902A /* GetReleasesByURLResponseModel.swift in Sources */,
 				290D17EE2CF19422006702B4 /* SearchArtistByNameResponseModel+Mapper.swift in Sources */,
 				290D185D2CF4D8D7006702B4 /* GetArtistByURLAPI.swift in Sources */,
 				290D17E82CF193F9006702B4 /* SearchArtistByNameEndpoint.swift in Sources */,
@@ -301,11 +325,15 @@
 				290D17F92CF19F81006702B4 /* NetworkCorePagination+Mapper.swift in Sources */,
 				290D18572CF4D8B4006702B4 /* GetArtistByURLRequestModel.swift in Sources */,
 				290D18592CF4D8BD006702B4 /* GetArtistByURLResponseModel.swift in Sources */,
+				297F4BED2CF571EB00BC902A /* GetReleasesByURLRequestModel.swift in Sources */,
 				290D17EC2CF1940A006702B4 /* SearchArtistByNameResponseModel.swift in Sources */,
+				297F4BE92CF5718A00BC902A /* GetReleasesByURLEndpoint.swift in Sources */,
 				290D180B2CF1A1D3006702B4 /* DiscogsDataRemoteDataSource.swift in Sources */,
+				297F4BEB2CF571B700BC902A /* GetReleasesByURLAPI.swift in Sources */,
 				290D17EA2CF19405006702B4 /* SearchArtistByNameRequestModel.swift in Sources */,
 				290D17E62CF193D7006702B4 /* SearchArtistByNameAPI.swift in Sources */,
 				290D185B2CF4D8CB006702B4 /* GetArtistByURLResponseModel+Mapper.swift in Sources */,
+				297F4BF12CF571FD00BC902A /* GetReleasesByURLResponseModel+Mapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

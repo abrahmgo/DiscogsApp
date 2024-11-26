@@ -13,6 +13,7 @@
 		290D18042CF1A136006702B4 /* DiscogsDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18032CF1A136006702B4 /* DiscogsDataSource.framework */; };
 		290D18082CF1A13A006702B4 /* DiscogsEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18072CF1A13A006702B4 /* DiscogsEntities.framework */; };
 		290D185F2CF4DED0006702B4 /* GetArtistByURLUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185E2CF4DED0006702B4 /* GetArtistByURLUsecase.swift */; };
+		297F4BF32CF64B2300BC902A /* GetReleasesByURLUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF22CF64B2300BC902A /* GetReleasesByURLUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		290D18032CF1A136006702B4 /* DiscogsDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D18072CF1A13A006702B4 /* DiscogsEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D185E2CF4DED0006702B4 /* GetArtistByURLUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLUsecase.swift; sourceTree = "<group>"; };
+		297F4BF22CF64B2300BC902A /* GetReleasesByURLUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -97,6 +99,7 @@
 			children = (
 				290D18002CF1A129006702B4 /* SearchArtistByNameUsecase.swift */,
 				290D185E2CF4DED0006702B4 /* GetArtistByURLUsecase.swift */,
+				297F4BF22CF64B2300BC902A /* GetReleasesByURLUsecase.swift */,
 			);
 			path = Artist;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				290D185F2CF4DED0006702B4 /* GetArtistByURLUsecase.swift in Sources */,
+				297F4BF32CF64B2300BC902A /* GetReleasesByURLUsecase.swift in Sources */,
 				290D18012CF1A129006702B4 /* SearchArtistByNameUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
