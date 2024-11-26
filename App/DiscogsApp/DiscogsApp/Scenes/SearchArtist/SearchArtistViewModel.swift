@@ -41,9 +41,10 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
                 await MainActor.run {
                     self.artists = artists
                 }
-                try await Task.sleep(nanoseconds: UInt64(2 * 1_000_000_000))
+                try await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
                 isSearching = false
             } catch {
+                isSearching = false
                 dump(error)
             }
         }

@@ -13,9 +13,9 @@ class SearchArtistCoordinator: SearchArtistRouterType {
     weak var view: UIViewController?
     
     func goToArtistDetail(with artist: ArtistSearch) {
-        print("go to artist detail")
-        print(view)
-        print(artist)
+        guard let view = view else { return }
+        let coordinator = ArtistCoordinator(view: view)
+        coordinator.start(artist: artist)
     }
     
     func start() -> UIViewController {

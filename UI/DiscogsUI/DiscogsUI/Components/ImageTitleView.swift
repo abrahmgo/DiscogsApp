@@ -6,20 +6,8 @@
 //
 
 import SwiftUI
-internal import NukeUI
-internal import Nuke
 
 public struct ImageTitleView: View {
-    
-    private let pipeline = ImagePipeline {
-        $0.dataLoader = {
-            let config = URLSessionConfiguration.default
-            config.urlCache = nil
-            return DataLoader(configuration: config)
-        }()
-        $0.imageCache = ImageCache()
-        $0.dataCache = try! DataCache(name: "com.andres.DiscogsUI")
-    }
     
     private let model: ImageTitleViewDataType
     
@@ -30,12 +18,12 @@ public struct ImageTitleView: View {
     public var body: some View {
         HStack(spacing: 5) {
             ImageView(url: model.urlImage)
+                .clipShape(Circle())
                 .frame(width: 50, height: 50)
-                .padding()
             Text(model.title)
                 .font(.headline)
             Spacer()
-        }.frame(maxWidth: .infinity)
+        }
     }
 }
 

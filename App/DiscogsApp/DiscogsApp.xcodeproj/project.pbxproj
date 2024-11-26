@@ -38,6 +38,7 @@
 		297F4BD72CF51B0400BC902A /* DiscogsUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 297F4BD52CF51B0400BC902A /* DiscogsUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		297F4BD92CF51B0900BC902A /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297F4BD82CF51B0900BC902A /* NetworkCore.framework */; };
 		297F4BDA2CF51B0900BC902A /* NetworkCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 297F4BD82CF51B0900BC902A /* NetworkCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		297F4BE22CF5420800BC902A /* ArtistCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BE12CF5420800BC902A /* ArtistCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		297F4BD22CF51B0100BC902A /* DiscogsUsecases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUsecases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		297F4BD52CF51B0400BC902A /* DiscogsUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		297F4BD82CF51B0900BC902A /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		297F4BE12CF5420800BC902A /* ArtistCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -204,6 +206,7 @@
 				297F4BA62CF51AA900BC902A /* ArtistFactory.swift */,
 				297F4BA72CF51AA900BC902A /* ArtistView.swift */,
 				297F4BA82CF51AA900BC902A /* ArtistViewModel.swift */,
+				297F4BE12CF5420800BC902A /* ArtistCoordinator.swift */,
 			);
 			path = Artist;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				297F4B8B2CF51A5B00BC902A /* AppDelegate.swift in Sources */,
+				297F4BE22CF5420800BC902A /* ArtistCoordinator.swift in Sources */,
 				297F4BB12CF51AA900BC902A /* ArtistView.swift in Sources */,
 				297F4BB22CF51AA900BC902A /* SearchArtistFactory.swift in Sources */,
 				297F4BB32CF51AA900BC902A /* SarchArtistView.swift in Sources */,

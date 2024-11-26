@@ -36,8 +36,7 @@ public struct ImageView: View {
             if let image = state.image {
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .clipShape(Circle())
+                    .aspectRatio(1, contentMode: .fit)
             } else {
                 Color.gray.opacity(0.2)
             }
