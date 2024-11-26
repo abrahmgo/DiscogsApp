@@ -10,6 +10,7 @@
 		290D171A2CF122D1006702B4 /* DiscogsUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D17112CF122D1006702B4 /* DiscogsUtils.framework */; };
 		290D183F2CF2F150006702B4 /* DiscogsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D183D2CF2F150006702B4 /* DiscogsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		290D18422CF2F160006702B4 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D18412CF2F160006702B4 /* UISearchBar+Extension.swift */; };
+		297F4C0A2CF67EE300BC902A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C092CF67EE300BC902A /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		290D17192CF122D1006702B4 /* DiscogsUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D183D2CF2F150006702B4 /* DiscogsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscogsUtils.h; sourceTree = "<group>"; };
 		290D18412CF2F160006702B4 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		297F4C092CF67EE300BC902A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				290D18412CF2F160006702B4 /* UISearchBar+Extension.swift */,
+				297F4C092CF67EE300BC902A /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297F4C0A2CF67EE300BC902A /* View+Extension.swift in Sources */,
 				290D18422CF2F160006702B4 /* UISearchBar+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

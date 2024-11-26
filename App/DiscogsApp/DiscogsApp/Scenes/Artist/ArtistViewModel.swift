@@ -51,13 +51,13 @@ class ArtistViewModel: ObservableObject {
         guard !members.isEmpty else {
             return
         }
-        self.membersTitle = "Members"
         let activeMembers = members.filter({$0.active})
         let data = activeMembers.map({InfoDetailViewData(id: $0.id,
                                                          title: $0.name,
                                                          subtitle: "", subtitle2: "",
                                                          subtitle3: "", urlImage: $0.imageURL)})
         await MainActor.run {
+            self.membersTitle = "Members"
             self.members = data
         }
     }

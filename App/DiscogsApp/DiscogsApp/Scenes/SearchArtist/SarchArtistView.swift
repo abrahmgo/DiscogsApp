@@ -24,13 +24,18 @@ struct SarchArtistView: View {
             }
         }
         .listStyle(.grouped)
+        .navigationBarTitle("Search", displayMode: .large)
         .searchable(text: $viewModel.searchText, prompt: "Look for something")
         .onChange(of: viewModel.searchText) { searchText in
             if searchText.isEmpty {
-                viewModel.setFavorites()
+                viewModel.setDefault()
             } else {
                 viewModel.searchArtist(name: searchText)
             }
+        }
+        .padding()
+        .onViewDidLoad() {
+            viewModel.setDefault()
         }
     }
     

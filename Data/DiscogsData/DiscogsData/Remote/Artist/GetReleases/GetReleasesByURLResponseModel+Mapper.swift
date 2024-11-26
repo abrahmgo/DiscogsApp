@@ -10,7 +10,7 @@ import DiscogsEntities
 extension GetReleasesResponseModel {
     
     func mapToRelease() -> ArtistRelease {
-        return ArtistRelease(format: format ?? "", id: id, title: title,
-                             subtilte: label ?? "", imageURL: thumb, year: year)
+        return ArtistRelease(format: format ?? "", id: id ?? 0, title: title ?? "",
+                             subtilte: label ?? "", imageURL: thumb ?? "", year: year ?? 0)
     }
 }

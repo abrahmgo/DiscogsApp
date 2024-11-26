@@ -7,6 +7,7 @@
 
 import SwiftUI
 import DiscogsUI
+import DiscogsUtils
 
 struct ReleasesView: View {
     
@@ -32,7 +33,7 @@ struct ReleasesView: View {
                 Button("Format", action: viewModel.sortFormat)
             }
         }
-        .onAppear() {
+        .onViewDidLoad() {
             viewModel.setViewData()
         }
     }

@@ -10,7 +10,7 @@ import DiscogsUI
 
 protocol SearchArtistViewModelType {
     func searchArtist(name: String)
-    func setFavorites()
+    func setDefault()
     func moreArtist()
     func goToArtist(id: String)
 }
@@ -39,6 +39,7 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
                                                               urlImage: $0.thumb)}
                 artistSearch += results
                 await MainActor.run {
+                    self.artists.removeAll()
                     self.artists = artists
                 }
                 try await Task.sleep(nanoseconds: UInt64(1 * 1_000_000_000))
@@ -67,9 +68,11 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
         }
     }
     
-    func setFavorites() {
-        artists = []
-        artistSearch = []
+    func setDefault() {
+        artists.removeAll()
+        artistSearch.removeAll()
+        let data = ImageTitleViewData(id: "", title: "Search some artist", urlImage: DiscogsConstants.defaultImage)
+        self.artists = [data]
     }
     
     func goToArtist(id: String) {

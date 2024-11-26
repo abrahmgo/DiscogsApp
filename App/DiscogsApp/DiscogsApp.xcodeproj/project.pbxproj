@@ -45,6 +45,7 @@
 		297F4BFC2CF65DCA00BC902A /* ReleasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFB2CF65DCA00BC902A /* ReleasesFactory.swift */; };
 		297F4BFE2CF65DD400BC902A /* RelesesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */; };
 		297F4C002CF65FF100BC902A /* ArtistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */; };
+		297F4C082CF67D0A00BC902A /* DiscogsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C072CF67D0A00BC902A /* DiscogsConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		297F4BFB2CF65DCA00BC902A /* ReleasesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesFactory.swift; sourceTree = "<group>"; };
 		297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelesesCoordinator.swift; sourceTree = "<group>"; };
 		297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRouter.swift; sourceTree = "<group>"; };
+		297F4C072CF67D0A00BC902A /* DiscogsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				297F4BBE2CF51AD500BC902A /* Network */,
+				297F4C072CF67D0A00BC902A /* DiscogsConstants.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				297F4BB42CF51AA900BC902A /* ArtistDependencies.swift in Sources */,
 				297F4BB52CF51AA900BC902A /* SearchArtistCoordinator.swift in Sources */,
 				297F4BFC2CF65DCA00BC902A /* ReleasesFactory.swift in Sources */,
+				297F4C082CF67D0A00BC902A /* DiscogsConstants.swift in Sources */,
 				297F4BB62CF51AA900BC902A /* SearchArtistViewModel.swift in Sources */,
 				297F4C002CF65FF100BC902A /* ArtistRouter.swift in Sources */,
 				297F4BB72CF51AA900BC902A /* SearchArtistRouter.swift in Sources */,

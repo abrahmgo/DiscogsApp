@@ -22,13 +22,15 @@ class ReleasesViewModel: ObservableObject {
     func setViewData() {
         Task {
             do {
+                await setDefault(text: "Loading...")
                 let releasesInfo = try await dependencies.getReleases.execute(url: dependencies.releasesURL,
                                                                               sort: .year)
+                artistReleases.removeAll()
                 artistReleases += releasesInfo
                 await formatData(releasesInfo: releasesInfo)
                 
             } catch {
-                
+                await setDefault(text: "Without results")
             }
         }
     }
@@ -36,14 +38,15 @@ class ReleasesViewModel: ObservableObject {
     func sortYear() {
         Task {
             do {
-                artistReleases = []
+                await setDefault(text: "Loading...")
                 let releasesInfo = try await dependencies.getReleases.execute(url: dependencies.releasesURL,
                                                                               sort: .year)
+                artistReleases.removeAll()
                 artistReleases += releasesInfo
                 await formatData(releasesInfo: releasesInfo)
                 
             } catch {
-                
+                await setDefault(text: "Without results")
             }
         }
     }
@@ -51,14 +54,15 @@ class ReleasesViewModel: ObservableObject {
     func sortTitle() {
         Task {
             do {
-                artistReleases = []
+                await setDefault(text: "Loading...")
                 let releasesInfo = try await dependencies.getReleases.execute(url: dependencies.releasesURL,
                                                                               sort: .title)
+                artistReleases.removeAll()
                 artistReleases += releasesInfo
                 await formatData(releasesInfo: releasesInfo)
                 
             } catch {
-                
+                await setDefault(text: "Without results")
             }
         }
     }
@@ -66,14 +70,15 @@ class ReleasesViewModel: ObservableObject {
     func sortFormat() {
         Task {
             do {
-                artistReleases = []
+                await setDefault(text: "Loading...")
                 let releasesInfo = try await dependencies.getReleases.execute(url: dependencies.releasesURL,
                                                                               sort: .format)
+                artistReleases.removeAll()
                 artistReleases += releasesInfo
                 await formatData(releasesInfo: releasesInfo)
                 
             } catch {
-                
+                await setDefault(text: "Without results")
             }
         }
     }
@@ -85,8 +90,15 @@ class ReleasesViewModel: ObservableObject {
                 artistReleases += results
                 await formatData(releasesInfo: artistReleases)
             } catch {
-                
+                await setDefault(text: "Without results")
             }
+        }
+    }
+    
+    func setDefault(text: String) async {
+        let data = InfoDetailViewData(id: 0, title: text, subtitle: "", subtitle2: "", subtitle3: "", urlImage: DiscogsConstants.defaultImage)
+        await MainActor.run {
+            self.releases = [data]
         }
     }
     

@@ -8,6 +8,7 @@
 import SwiftUI
 import DiscogsUI
 import DiscogsEntities
+import DiscogsUtils
 
 struct ArtistView: View {
     
@@ -47,7 +48,7 @@ struct ArtistView: View {
                     .frame(maxWidth: .infinity, maxHeight: 400)
             })
         }
-        .onAppear() {
+        .onViewDidLoad() {
             viewModel.setViewData()
         }
     }
