@@ -17,8 +17,8 @@ struct GetReleasesByURLAPI: GetReleasesByURLRemoteDataSource {
         self.service = service
     }
     
-    func execute(url: String) async throws -> ArtistReleaseInfo {
-        let model = GetReleasesByURLRequestModel(url: url)
+    func execute(url: String, sort: DiscogsTypeSort) async throws -> ArtistReleaseInfo {
+        let model = GetReleasesByURLRequestModel(url: url, sort: sort)
         let endpoint = GetReleasesByURLEndpoint(model: model)
         let request: GetReleasesByURLResponseModel = try await service.request(target: endpoint)
         

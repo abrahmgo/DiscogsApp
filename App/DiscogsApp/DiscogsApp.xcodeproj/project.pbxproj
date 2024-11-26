@@ -42,6 +42,9 @@
 		297F4BF62CF65DA400BC902A /* ReleasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF52CF65DA400BC902A /* ReleasesView.swift */; };
 		297F4BF82CF65DAB00BC902A /* ReleasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF72CF65DAB00BC902A /* ReleasesViewModel.swift */; };
 		297F4BFA2CF65DB200BC902A /* RelesesDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF92CF65DB200BC902A /* RelesesDependencies.swift */; };
+		297F4BFC2CF65DCA00BC902A /* ReleasesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFB2CF65DCA00BC902A /* ReleasesFactory.swift */; };
+		297F4BFE2CF65DD400BC902A /* RelesesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */; };
+		297F4C002CF65FF100BC902A /* ArtistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,9 @@
 		297F4BF52CF65DA400BC902A /* ReleasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesView.swift; sourceTree = "<group>"; };
 		297F4BF72CF65DAB00BC902A /* ReleasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesViewModel.swift; sourceTree = "<group>"; };
 		297F4BF92CF65DB200BC902A /* RelesesDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelesesDependencies.swift; sourceTree = "<group>"; };
+		297F4BFB2CF65DCA00BC902A /* ReleasesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleasesFactory.swift; sourceTree = "<group>"; };
+		297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelesesCoordinator.swift; sourceTree = "<group>"; };
+		297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -214,6 +220,7 @@
 				297F4BA72CF51AA900BC902A /* ArtistView.swift */,
 				297F4BA82CF51AA900BC902A /* ArtistViewModel.swift */,
 				297F4BE12CF5420800BC902A /* ArtistCoordinator.swift */,
+				297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */,
 			);
 			path = Artist;
 			sourceTree = "<group>";
@@ -268,6 +275,8 @@
 			children = (
 				297F4BF52CF65DA400BC902A /* ReleasesView.swift */,
 				297F4BF72CF65DAB00BC902A /* ReleasesViewModel.swift */,
+				297F4BFB2CF65DCA00BC902A /* ReleasesFactory.swift */,
+				297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */,
 				297F4BF92CF65DB200BC902A /* RelesesDependencies.swift */,
 			);
 			path = Releases;
@@ -423,11 +432,14 @@
 				297F4BF82CF65DAB00BC902A /* ReleasesViewModel.swift in Sources */,
 				297F4BF62CF65DA400BC902A /* ReleasesView.swift in Sources */,
 				297F4BB12CF51AA900BC902A /* ArtistView.swift in Sources */,
+				297F4BFE2CF65DD400BC902A /* RelesesCoordinator.swift in Sources */,
 				297F4BB22CF51AA900BC902A /* SearchArtistFactory.swift in Sources */,
 				297F4BB32CF51AA900BC902A /* SarchArtistView.swift in Sources */,
 				297F4BB42CF51AA900BC902A /* ArtistDependencies.swift in Sources */,
 				297F4BB52CF51AA900BC902A /* SearchArtistCoordinator.swift in Sources */,
+				297F4BFC2CF65DCA00BC902A /* ReleasesFactory.swift in Sources */,
 				297F4BB62CF51AA900BC902A /* SearchArtistViewModel.swift in Sources */,
+				297F4C002CF65FF100BC902A /* ArtistRouter.swift in Sources */,
 				297F4BB72CF51AA900BC902A /* SearchArtistRouter.swift in Sources */,
 				297F4BBF2CF51AD500BC902A /* APIBundle.swift in Sources */,
 				297F4BC02CF51AD500BC902A /* APIConfig.swift in Sources */,

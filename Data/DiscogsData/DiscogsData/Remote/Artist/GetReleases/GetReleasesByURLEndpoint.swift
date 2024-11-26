@@ -31,7 +31,7 @@ struct GetReleasesByURLEndpoint: NetworkTargetType {
     
     var queryParams: [String : Any]? {
         return ["per_page": 30,
-                "sort": "year",
+                "sort": model.sort.rawValue,
                 "sort_order": "desc"]
     }
     

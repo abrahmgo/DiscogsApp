@@ -14,13 +14,16 @@ public struct ArtistInfo {
     public let profile: String
     public let releaseURL: String
     public let images: [AtistImage]
+    public let members: [ArtistMember]
     
-    public init(id: Int, name: String, profile: String, releaseURL: String, images: [AtistImage]) {
+    public init(id: Int, name: String, profile: String, releaseURL: String,
+                images: [AtistImage], members: [ArtistMember]) {
         self.id = id
         self.name = name
         self.profile = profile
         self.releaseURL = releaseURL
         self.images = images
+        self.members = members
     }
 }
 

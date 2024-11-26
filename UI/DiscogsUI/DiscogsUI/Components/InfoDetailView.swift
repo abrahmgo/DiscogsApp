@@ -40,5 +40,5 @@ public struct InfoDetailView: View {
 }
 
 #Preview {
-    InfoDetailView(model: InfoDetailViewData(title: "Title", subtitle: "Subtitle", subtitle2: "Subtitle2", subtitle3: "Subtitle3", urlImage: "https://images.unsplash.com/photo-15-11e-11e8-11e8-11e80011e800?ixid=MnwxMjA3fDB8MHxzZWFyY2h"))
+    InfoDetailView(model: InfoDetailViewData(id: 1, title: "Title", subtitle: "Subtitle", subtitle2: "Subtitle2", subtitle3: "Subtitle3", urlImage: "https://images.unsplash.com/photo-15-11e-11e8-11e8-11e80011e800?ixid=MnwxMjA3fDB8MHxzZWFyY2h"))
 }

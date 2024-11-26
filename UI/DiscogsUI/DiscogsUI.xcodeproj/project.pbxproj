@@ -19,6 +19,7 @@
 		290D184F2CF4D0F2006702B4 /* ImageViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D184E2CF4D0F2006702B4 /* ImageViewData.swift */; };
 		297F4BDE2CF52F7800BC902A /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BDD2CF52F7800BC902A /* InfoDetailView.swift */; };
 		297F4BE02CF52FE200BC902A /* InfoDetailViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BDF2CF52FE200BC902A /* InfoDetailViewData.swift */; };
+		297F4C022CF6637300BC902A /* GrowingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C012CF6637300BC902A /* GrowingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		290D184E2CF4D0F2006702B4 /* ImageViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewData.swift; sourceTree = "<group>"; };
 		297F4BDD2CF52F7800BC902A /* InfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
 		297F4BDF2CF52FE200BC902A /* InfoDetailViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailViewData.swift; sourceTree = "<group>"; };
+		297F4C012CF6637300BC902A /* GrowingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -110,6 +112,7 @@
 				290D184E2CF4D0F2006702B4 /* ImageViewData.swift */,
 				297F4BDD2CF52F7800BC902A /* InfoDetailView.swift */,
 				297F4BDF2CF52FE200BC902A /* InfoDetailViewData.swift */,
+				297F4C012CF6637300BC902A /* GrowingButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				290D18292CF29EBF006702B4 /* ImageTitleView.swift in Sources */,
 				297F4BE02CF52FE200BC902A /* InfoDetailViewData.swift in Sources */,
 				290D184F2CF4D0F2006702B4 /* ImageViewData.swift in Sources */,
+				297F4C022CF6637300BC902A /* GrowingButton.swift in Sources */,
 				290D18382CF2B993006702B4 /* ImageTitleViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

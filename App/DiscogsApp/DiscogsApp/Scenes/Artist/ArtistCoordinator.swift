@@ -8,7 +8,7 @@
 import UIKit
 import DiscogsEntities
 
-struct ArtistCoordinator {
+struct ArtistCoordinator: ArtistRouterType {
     
     private let view: UIViewController
     
@@ -17,7 +17,12 @@ struct ArtistCoordinator {
     }
     
     func start(artist: ArtistSearch) {
-        let view = ArtistFactory.build(artist: artist)
+        let view = ArtistFactory.build(artist: artist, router: self)
+        self.view.navigationController?.pushViewController(view, animated: true)
+    }
+    
+    func goToReleases(url: String) {
+        let view = ReleasesFactory.build(releasesURL: url)
         self.view.navigationController?.pushViewController(view, animated: true)
     }
 }

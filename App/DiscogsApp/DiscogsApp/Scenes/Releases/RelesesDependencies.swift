@@ -5,4 +5,12 @@
 //  Created by Andrés Abraham Bonilla Gómez on 26/11/24.
 //
 
-import Foundation
+import DiscogsEntities
+import DiscogsUsecases
+
+struct RelesesDependencies {
+    
+    let releasesURL: String
+    let getReleases: GetReleasesByURLUsecaseType
+}
+
