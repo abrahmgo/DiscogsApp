@@ -27,8 +27,8 @@ public class GetReleasesByURLUsecase: GetReleasesByURLUsecaseType {
     
     public func execute(url: String, sort: DiscogsTypeSort = .year) async throws -> [ArtistRelease] {
         let data = try await dataSource.execute(url: url, sort: sort)
-        totalPages = data.pagination.total
-        nextUrl = data.pagination.urls?.next
+        totalPages = data.pagination?.total ?? 0
+        nextUrl = data.pagination?.urls?.next
         self.sort = sort
         return data.releases
     }
@@ -37,7 +37,7 @@ public class GetReleasesByURLUsecase: GetReleasesByURLUsecaseType {
         if page <= totalPages, let url = nextUrl {
             page += 1
             let data = try await dataSource.execute(url: url, sort: sort)
-            nextUrl = data.pagination.urls?.next
+            nextUrl = data.pagination?.urls?.next
             return data.releases
         } else {
             return []

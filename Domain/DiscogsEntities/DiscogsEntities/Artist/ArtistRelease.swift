@@ -10,9 +10,9 @@ import Foundation
 public struct ArtistReleaseInfo {
     
     public let releases: [ArtistRelease]
-    public let pagination: Pagination
+    public let pagination: Pagination?
     
-    public init(releases: [ArtistRelease], pagination: Pagination) {
+    public init(releases: [ArtistRelease], pagination: Pagination? = nil) {
         self.releases = releases
         self.pagination = pagination
     }

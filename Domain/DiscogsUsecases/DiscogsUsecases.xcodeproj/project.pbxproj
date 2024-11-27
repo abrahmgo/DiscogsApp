@@ -14,6 +14,13 @@
 		290D18082CF1A13A006702B4 /* DiscogsEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D18072CF1A13A006702B4 /* DiscogsEntities.framework */; };
 		290D185F2CF4DED0006702B4 /* GetArtistByURLUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D185E2CF4DED0006702B4 /* GetArtistByURLUsecase.swift */; };
 		297F4BF32CF64B2300BC902A /* GetReleasesByURLUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BF22CF64B2300BC902A /* GetReleasesByURLUsecase.swift */; };
+		297F4C232CF6B4AA00BC902A /* DiscogsUsecasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C212CF6B4AA00BC902A /* DiscogsUsecasesTests.swift */; };
+		297F4C262CF6B4D900BC902A /* SearchArtistByNameUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C252CF6B4D900BC902A /* SearchArtistByNameUsecaseTests.swift */; };
+		297F4C282CF6B4F700BC902A /* SearchArtistByNameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C272CF6B4F700BC902A /* SearchArtistByNameMock.swift */; };
+		297F4C2D2CF6B6EA00BC902A /* GetArtistByURLMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C2C2CF6B6EA00BC902A /* GetArtistByURLMock.swift */; };
+		297F4C2F2CF6B71D00BC902A /* GetArtistByURLUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C2E2CF6B71D00BC902A /* GetArtistByURLUsecaseTests.swift */; };
+		297F4C312CF6B7AF00BC902A /* GetReleasesByURLMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C302CF6B7AF00BC902A /* GetReleasesByURLMock.swift */; };
+		297F4C332CF6B82700BC902A /* GetReleasesByURLUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C322CF6B82700BC902A /* GetReleasesByURLUsecaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +42,14 @@
 		290D18072CF1A13A006702B4 /* DiscogsEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiscogsEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D185E2CF4DED0006702B4 /* GetArtistByURLUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLUsecase.swift; sourceTree = "<group>"; };
 		297F4BF22CF64B2300BC902A /* GetReleasesByURLUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLUsecase.swift; sourceTree = "<group>"; };
+		297F4C212CF6B4AA00BC902A /* DiscogsUsecasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsUsecasesTests.swift; sourceTree = "<group>"; };
+		297F4C252CF6B4D900BC902A /* SearchArtistByNameUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistByNameUsecaseTests.swift; sourceTree = "<group>"; };
+		297F4C272CF6B4F700BC902A /* SearchArtistByNameMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistByNameMock.swift; sourceTree = "<group>"; };
+		297F4C2C2CF6B6EA00BC902A /* GetArtistByURLMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLMock.swift; sourceTree = "<group>"; };
+		297F4C2E2CF6B71D00BC902A /* GetArtistByURLUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtistByURLUsecaseTests.swift; sourceTree = "<group>"; };
+		297F4C302CF6B7AF00BC902A /* GetReleasesByURLMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLMock.swift; sourceTree = "<group>"; };
+		297F4C322CF6B82700BC902A /* GetReleasesByURLUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleasesByURLUsecaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		290D16D72CF1229E006702B4 /* DiscogsUsecasesTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DiscogsUsecasesTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		290D16C82CF1229E006702B4 /* Frameworks */ = {
@@ -70,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				290D17FD2CF1A0F7006702B4 /* DiscogsUsecases */,
-				290D16D72CF1229E006702B4 /* DiscogsUsecasesTests */,
+				297F4C222CF6B4AA00BC902A /* DiscogsUsecasesTests */,
 				290D18022CF1A136006702B4 /* Frameworks */,
 				290D16CC2CF1229E006702B4 /* Products */,
 			);
@@ -111,6 +117,52 @@
 				290D18032CF1A136006702B4 /* DiscogsDataSource.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		297F4C222CF6B4AA00BC902A /* DiscogsUsecasesTests */ = {
+			isa = PBXGroup;
+			children = (
+				297F4C242CF6B4AF00BC902A /* Artist */,
+				297F4C212CF6B4AA00BC902A /* DiscogsUsecasesTests.swift */,
+			);
+			path = DiscogsUsecasesTests;
+			sourceTree = "<group>";
+		};
+		297F4C242CF6B4AF00BC902A /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				297F4C2B2CF6B6DA00BC902A /* Releases */,
+				297F4C2A2CF6B6D400BC902A /* Artist */,
+				297F4C292CF6B6C800BC902A /* Search */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		297F4C292CF6B6C800BC902A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				297F4C252CF6B4D900BC902A /* SearchArtistByNameUsecaseTests.swift */,
+				297F4C272CF6B4F700BC902A /* SearchArtistByNameMock.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		297F4C2A2CF6B6D400BC902A /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				297F4C2C2CF6B6EA00BC902A /* GetArtistByURLMock.swift */,
+				297F4C2E2CF6B71D00BC902A /* GetArtistByURLUsecaseTests.swift */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		297F4C2B2CF6B6DA00BC902A /* Releases */ = {
+			isa = PBXGroup;
+			children = (
+				297F4C302CF6B7AF00BC902A /* GetReleasesByURLMock.swift */,
+				297F4C322CF6B82700BC902A /* GetReleasesByURLUsecaseTests.swift */,
+			);
+			path = Releases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +211,6 @@
 			);
 			dependencies = (
 				290D16D62CF1229E006702B4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				290D16D72CF1229E006702B4 /* DiscogsUsecasesTests */,
 			);
 			name = DiscogsUsecasesTests;
 			packageProductDependencies = (
@@ -241,6 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297F4C262CF6B4D900BC902A /* SearchArtistByNameUsecaseTests.swift in Sources */,
+				297F4C232CF6B4AA00BC902A /* DiscogsUsecasesTests.swift in Sources */,
+				297F4C2F2CF6B71D00BC902A /* GetArtistByURLUsecaseTests.swift in Sources */,
+				297F4C312CF6B7AF00BC902A /* GetReleasesByURLMock.swift in Sources */,
+				297F4C2D2CF6B6EA00BC902A /* GetArtistByURLMock.swift in Sources */,
+				297F4C332CF6B82700BC902A /* GetReleasesByURLUsecaseTests.swift in Sources */,
+				297F4C282CF6B4F700BC902A /* SearchArtistByNameMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
