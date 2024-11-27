@@ -58,6 +58,8 @@ To run tests, choose discogs app, go to test section and run it
 
 The application has this framework and a rules file, which allows to maintain the code quality, if any rule is broken, xcode can't compile until the defect is fixed.
 
+Also you can se the file ```swiftlint_report.html``` to see the report
+
 ## API Reference
 
 #### Search artist by name
