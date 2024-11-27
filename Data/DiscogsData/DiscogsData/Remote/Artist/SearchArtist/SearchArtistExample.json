@@ -1,0 +1,164 @@
+{
+    "pagination": {
+        "page": 1,
+        "pages": 13,
+        "per_page": 10,
+        "items": 127,
+        "urls": {
+            "last": "https://api.discogs.com/database/search?query=Coldplay&type=artist&token=WTsyWqIQOTqwyhdWvqQgxpYkGqVgUDWDiyPnjWcY&page=13&per_page=10",
+            "next": "https://api.discogs.com/database/search?query=Coldplay&type=artist&token=WTsyWqIQOTqwyhdWvqQgxpYkGqVgUDWDiyPnjWcY&page=2&per_page=10"
+        }
+    },
+    "results": [
+        {
+            "id": 29735,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/29735-Coldplay",
+            "title": "Coldplay",
+            "thumb": "https://i.discogs.com/V90awgfHX4AGcdXYb6M4w8Sl-zzxrK0nsMET0pUXMTw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI5NzM1/LTE3MjAwNjU1MTEt/NzM3Mi5qcGVn.jpeg",
+            "cover_image": "https://i.discogs.com/sBor9_gG6g8eU12WLhcoDn_N88zv3F5VXh8i_lkVaW0/rs:fit/g:sm/q:90/h:385/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI5NzM1/LTE3MjAwNjU1MTEt/NzM3Mi5qcGVn.jpeg",
+            "resource_url": "https://api.discogs.com/artists/29735"
+        },
+        {
+            "id": 12431419,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/12431419-Bossa-N-Coldplay",
+            "title": "Bossa N' Coldplay",
+            "thumb": "",
+            "cover_image": "https://st.discogs.com/de0abfc1c4e64adaa25ec5cfab8f4784713fc645/images/spacer.gif",
+            "resource_url": "https://api.discogs.com/artists/12431419"
+        },
+        {
+            "id": 13023612,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/13023612-Coldplay-vs-Cosmos",
+            "title": "Coldplay vs Cosmos",
+            "thumb": "",
+            "cover_image": "https://st.discogs.com/de0abfc1c4e64adaa25ec5cfab8f4784713fc645/images/spacer.gif",
+            "resource_url": "https://api.discogs.com/artists/13023612"
+        },
+        {
+            "id": 9137986,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/9137986-Piano-Tribute-To-Coldplay",
+            "title": "Piano Tribute To Coldplay",
+            "thumb": "",
+            "cover_image": "https://st.discogs.com/de0abfc1c4e64adaa25ec5cfab8f4784713fc645/images/spacer.gif",
+            "resource_url": "https://api.discogs.com/artists/9137986"
+        },
+        {
+            "id": 443860,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/443860-Dan-Green",
+            "title": "Dan Green",
+            "thumb": "https://i.discogs.com/p-PSuKvb6SHuFEiPx-NVA8Lvy8dPNy0tAOyc_b30Sbc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ0Mzg2/MC0xNDgyMTc2Njc0/LTEzNTQuanBlZw.jpeg",
+            "cover_image": "https://i.discogs.com/u5--G_iM4HjI5qfffSUWy9PhmLSBBWSru751t0LkxsU/rs:fit/g:sm/q:90/h:350/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQ0Mzg2/MC0xNDgyMTc2Njc0/LTEzNTQuanBlZw.jpeg",
+            "resource_url": "https://api.discogs.com/artists/443860"
+        },
+        {
+            "id": 974611,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/974611-Dave-Holmes-7",
+            "title": "Dave Holmes (7)",
+            "thumb": "",
+            "cover_image": "https://st.discogs.com/de0abfc1c4e64adaa25ec5cfab8f4784713fc645/images/spacer.gif",
+            "resource_url": "https://api.discogs.com/artists/974611"
+        },
+        {
+            "id": 2984782,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/2984782-Alex-Pollock",
+            "title": "Alex Pollock",
+            "thumb": "https://i.discogs.com/8pPQJKHvlCeyCGSHQNXWAUedZVl1YAs9sWyWgI9wEwA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI5ODQ3/ODItMTM5MDUwNjA2/NS02NDI5LmpwZWc.jpeg",
+            "cover_image": "https://i.discogs.com/oJWzdJDwxQxRPvyS8Qff3B08HMXXFMKzTNP663nmESs/rs:fit/g:sm/q:90/h:277/w:215/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI5ODQ3/ODItMTM5MDUwNjA2/NS02NDI5LmpwZWc.jpeg",
+            "resource_url": "https://api.discogs.com/artists/2984782"
+        },
+        {
+            "id": 530746,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/530746-Will-Champion",
+            "title": "Will Champion",
+            "thumb": "https://i.discogs.com/JcJ7gRSgd2mVsnEoKVhWJWzHLUmyKoAcsA2qWFS4IIk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzMDc0/Ni0xNzEyNzkxNDA0/LTU3MDcuanBlZw.jpeg",
+            "cover_image": "https://i.discogs.com/iEAVCocns5GVqDYe8tefWyrTltcgGK9GEu-HJKKbdNM/rs:fit/g:sm/q:90/h:364/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUzMDc0/Ni0xNzEyNzkxNDA0/LTU3MDcuanBlZw.jpeg",
+            "resource_url": "https://api.discogs.com/artists/530746"
+        },
+        {
+            "id": 1687004,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/1687004-Steve-Strange-2",
+            "title": "Steve Strange (2)",
+            "thumb": "https://i.discogs.com/H-NLXbFRCkUc18BOTEwyz6SqsyrnC7SS9R0QVT1nLUo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE2ODcw/MDQtMTM0OTA5ODYx/OC01MDYwLmpwZWc.jpeg",
+            "cover_image": "https://i.discogs.com/dNiyxO7wfNXo2Gsz31t-8l2XpyFznZ-ogrlriX4yZaU/rs:fit/g:sm/q:90/h:231/w:303/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE2ODcw/MDQtMTM0OTA5ODYx/OC01MDYwLmpwZWc.jpeg",
+            "resource_url": "https://api.discogs.com/artists/1687004"
+        },
+        {
+            "id": 2982855,
+            "type": "artist",
+            "user_data": {
+                "in_wantlist": false,
+                "in_collection": false
+            },
+            "master_id": null,
+            "master_url": null,
+            "uri": "/artist/2982855-Ed-Jarman",
+            "title": "Ed Jarman",
+            "thumb": "https://i.discogs.com/AmPVElDGAufopRidy_Ggnw6wf0W01Z_S1L0byqoRV8A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI5ODI4/NTUtMTM4ODI1NDIw/MC01ODQ0LmpwZWc.jpeg",
+            "cover_image": "https://i.discogs.com/uip_TWORrXrIRkQwQHhorkFDd1QNand9l5UGnIGOomI/rs:fit/g:sm/q:90/h:222/w:222/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTI5ODI4/NTUtMTM4ODI1NDIw/MC01ODQ0LmpwZWc.jpeg",
+            "resource_url": "https://api.discogs.com/artists/2982855"
+        }
+    ]
+}

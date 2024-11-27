@@ -39,6 +39,9 @@ struct SearchArtistByNameEndpoint: NetworkTargetType {
     var headers: [String : String]?
     
     var sampleData: Data? {
-        return nil
+        let bundle = DiscogsDataRemoteDataSource.bundle
+        let sampleData = NetworkCoreSampleData(bundle: bundle)
+        
+        return sampleData.getData(for: "SearchArtistExample")
     }
 }

@@ -1,0 +1,658 @@
+{
+    "pagination": {
+        "page": 1,
+        "pages": 116,
+        "per_page": 30,
+        "items": 3454,
+        "urls": {
+            "last": "https://api.discogs.com/artists/29735/releases?token=WTsyWqIQOTqwyhdWvqQgxpYkGqVgUDWDiyPnjWcY&per_page=30&sort=year&sort_order=desc&page=116",
+            "next": "https://api.discogs.com/artists/29735/releases?token=WTsyWqIQOTqwyhdWvqQgxpYkGqVgUDWDiyPnjWcY&per_page=30&sort=year&sort_order=desc&page=2"
+        }
+    },
+    "releases": [
+        {
+            "id": 3521332,
+            "title": "Feelslikeimfallinginlove",
+            "type": "master",
+            "main_release": 31021640,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/3521332",
+            "year": 2024,
+            "thumb": "https://i.discogs.com/eEcO_p_z9P7tlbjRnpNIKjOhfgOwffjE-i3AUswij2c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMDIx/NjQwLTE3MTg5ODY5/NzQtNDMyMi5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 1,
+                    "in_collection": 4
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 3642264,
+            "title": "All My Love",
+            "type": "master",
+            "main_release": 32157663,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/3642264",
+            "year": 2024,
+            "thumb": "https://i.discogs.com/XNb1EL5XKBkl5qcqrIlU-s9rHnndBMMJlXEG2FMA2eY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMTU3/NjYzLTE3MzAzNzk3/MDAtOTU1OS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 0,
+                    "in_collection": 2
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 3578974,
+            "title": "We Pray",
+            "type": "master",
+            "main_release": 31565716,
+            "artist": "Coldplay Ft Little Simz, Burna Boy, Elyanna & TINI (12)",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/3578974",
+            "year": 2024,
+            "thumb": "https://i.discogs.com/zWSZ-mtxkGyDlxVfXZXxzzVMAYGRT_PrfsciCkPjxkE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNTY1/NzE2LTE3MjQ3ODMy/NTctNTA0MS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 37,
+                    "in_collection": 409
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 3614440,
+            "title": "Moon Music",
+            "type": "master",
+            "main_release": 31902151,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/3614440",
+            "year": 2024,
+            "thumb": "https://i.discogs.com/qo7LJr7d-yJSihOUe21DKLIMjT_nxD1oEM7l9eaOrzY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxOTAy/MTUxLTE3Mjg2NDA2/MDQtNjMyMC5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 66,
+                    "in_collection": 1036
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 28454332,
+            "status": "Accepted",
+            "type": "release",
+            "format": "12\", Bioplastic, Ltd, Num",
+            "label": "EarthPercent",
+            "title": "Earth / Percent x Earth Day",
+            "resource_url": "https://api.discogs.com/releases/28454332",
+            "role": "Main",
+            "artist": "Coldplay X H.E.R. (2) / Chvrches and Robert Smith / Victoria Canal / Nile Rodgers & Chic / Future Utopia / Emeli Sandé",
+            "year": 2023,
+            "thumb": "https://i.discogs.com/lqV9g4S26w8Z78NOlthMFK1tNwWkLABqU32WjD62yKo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDU0/MzMyLTE2OTkyMTcz/NjYtNzM5Mi5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 51,
+                    "in_collection": 57
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 23092952,
+            "status": "Accepted",
+            "type": "release",
+            "format": "File, MP3, Single, 320",
+            "label": "EarthPercent",
+            "title": "Humankind (Live In Mexico City)",
+            "resource_url": "https://api.discogs.com/releases/23092952",
+            "role": "Main",
+            "artist": "Coldplay",
+            "year": 2022,
+            "thumb": "https://i.discogs.com/giWJ1cDV0J8crfn6P3jL3RJ56VEYpXmv9FjjS3Zl-HE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMDky/OTUyLTE2NTE1NDAx/MjYtMjIxNS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 3,
+                    "in_collection": 8
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 28471567,
+            "status": "Accepted",
+            "type": "release",
+            "format": "File, ALAC",
+            "label": "Not On Label (Coldplay Self-released)",
+            "title": "Coldplay (Daniel Johnston Remix) + REVISED",
+            "resource_url": "https://api.discogs.com/releases/28471567",
+            "role": "Main",
+            "artist": "Coldplay",
+            "year": 2022,
+            "thumb": "https://i.discogs.com/BRdwwhbtyrkUSOgVviLH8TDaqzbGJ7MDiWxz5G_RLpw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDcx/NTY3LTE2OTYyMjg4/MTItNTc0OS5wbmc.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 3,
+                    "in_collection": 3
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 2547752,
+            "title": "Let Somebody Go",
+            "type": "master",
+            "main_release": 22488596,
+            "artist": "Coldplay X Selena Gomez",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/2547752",
+            "year": 2022,
+            "thumb": "https://i.discogs.com/2WJLLDFg_nYkfts0dlPLjyFJFJLiPGt8JOkIxwLj2Gk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNDg4/NTk2LTE2NDcxMjIz/MDgtOTkzNi5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 2,
+                    "in_collection": 3
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 20859214,
+            "status": "Accepted",
+            "type": "release",
+            "format": "4xFile, MP3, EP, VBR",
+            "label": "Atlantic",
+            "title": "Live From Climate Pledge Arena",
+            "resource_url": "https://api.discogs.com/releases/20859214",
+            "role": "Main",
+            "artist": "Coldplay",
+            "year": 2021,
+            "thumb": "https://i.discogs.com/UbJYrr62uL3k2XT7NQI2Ge6bp1xxBslRHGn0f8NfoMY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwODU5/MjE0LTE2MzYxMDk1/NDUtODI4My5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 5,
+                    "in_collection": 11
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 22368511,
+            "status": "Accepted",
+            "type": "release",
+            "format": "5xFile, ALAC, EP",
+            "label": "Parlophone",
+            "title": "Infinity Station Sessions - EP",
+            "resource_url": "https://api.discogs.com/releases/22368511",
+            "role": "Main",
+            "artist": "Coldplay",
+            "year": 2021,
+            "thumb": "https://i.discogs.com/z-U0GI-qAM7TPJGhq2c8hlHo6T360oyFqdJ6zYDQBRA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzY4/NTExLTE2NDYzMDM2/MjktOTQxMi5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 6,
+                    "in_collection": 10
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 2114275,
+            "title": "Higher Power",
+            "type": "master",
+            "main_release": 18623188,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/2114275",
+            "year": 2021,
+            "thumb": "https://i.discogs.com/jpG0GelSmXNuPqH_1C8XZc0XEEvXTh32QkZYd-VQoCY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NjIz/MTg4LTE3MjgzNzE0/NDQtODM5NS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 48,
+                    "in_collection": 669
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 2337988,
+            "title": "Music Of The Spheres",
+            "type": "master",
+            "main_release": 20587606,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/2337988",
+            "year": 2021,
+            "thumb": "https://i.discogs.com/14OOYIZhhbn28lCub824LyxOF0KibuXna4SAZwSqOek/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNTg3/NjA2LTE2MzQ2NzAx/MTAtNDcyMy5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 730,
+                    "in_collection": 11185
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 2311492,
+            "title": "My Universe",
+            "type": "master",
+            "main_release": 20367307,
+            "artist": "Coldplay X BTS (4)",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/2311492",
+            "year": 2021,
+            "thumb": "https://i.discogs.com/5ee_-g4-lBj4x4tfX3Hp5DQNxQsMDexBzo2a3BBxO6k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzY3/MzA3LTE2MzI2MDA4/MjItNjU2Mi5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 57,
+                    "in_collection": 244
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 2225857,
+            "title": "Coloratura",
+            "type": "master",
+            "main_release": 19597609,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/2225857",
+            "year": 2021,
+            "thumb": "https://i.discogs.com/XJgK5SApKdbSk4rRHWVNNyLUPnrvBZO28U9aYdHmIDI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTk3/NjA5LTE2MjcwNTQ5/MzMtMjgwMC5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 10,
+                    "in_collection": 19
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 14866724,
+            "status": "Accepted",
+            "type": "release",
+            "format": "3xFile, AAC, EP, 256",
+            "label": "Parlophone",
+            "title": "Reimagined",
+            "resource_url": "https://api.discogs.com/releases/14866724",
+            "role": "Main",
+            "artist": "Coldplay",
+            "year": 2020,
+            "thumb": "https://i.discogs.com/0dfbh8DvyHYwbzS9Nm_1Jkbq__AjTi0EdC4Gs3fQNtQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODY2/NzI0LTE1ODMwODk4/MjMtMjQ3OS5wbmc.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 4,
+                    "in_collection": 20
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1888815,
+            "title": "Flags",
+            "type": "master",
+            "main_release": 16627116,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1888815",
+            "year": 2020,
+            "thumb": "https://i.discogs.com/OzRjE3fcOPxDUCXAhEwhQ8TcYhEUV4CQiePHp9eeDhE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NjI3/MTE2LTE2MDg5MTgx/MDUtMjk1OS5wbmc.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 3,
+                    "in_collection": 6
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 18319744,
+            "status": "Accepted",
+            "type": "release",
+            "format": "CD, Album, RE + CD, Album, RE + Box, Comp, Ltd",
+            "label": "Warner Music France",
+            "title": "Ghost Stories / X&Y",
+            "resource_url": "https://api.discogs.com/releases/18319744",
+            "role": "Main",
+            "artist": "Coldplay",
+            "year": 2019,
+            "thumb": "https://i.discogs.com/beAUS0BUqYHiJovN8ooQz7GuUMW4DbG7mXDCAqTHs3E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzE5/NzQ0LTE2MTg1Njg5/NDMtOTI2MS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 13,
+                    "in_collection": 16
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1626386,
+            "title": "Arabesque / Orphans",
+            "type": "master",
+            "main_release": 14311809,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1626386",
+            "year": 2019,
+            "thumb": "https://i.discogs.com/7p80fNTHOrZbRHjvDF-Strf7gkq2G4pgG8_uQns08D0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzEx/ODA5LTE1NzI2MTUx/ODYtNjY0NC5tcG8.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 100,
+                    "in_collection": 1125
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1638967,
+            "title": "Everyday Life",
+            "type": "master",
+            "main_release": 14480107,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1638967",
+            "year": 2019,
+            "thumb": "https://i.discogs.com/bSwg2rnU811c3GyqAiv6RRjzni2RlCnwQm06GZj-tcE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDgw/MTA3LTE1NzUzODEy/NTgtNzIyMy5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 46,
+                    "in_collection": 85
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1684927,
+            "title": "Everyday Life",
+            "type": "master",
+            "main_release": 14468377,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1684927",
+            "year": 2019,
+            "thumb": "https://i.discogs.com/n6kx2MliwEo9evDqSVgc2B-i0_Nv5hA2CagCDW9w1C0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDY4/Mzc3LTE1NzUxNDYw/MDctODgzMC5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 4,
+                    "in_collection": 8
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1684928,
+            "title": "Daddy",
+            "type": "master",
+            "main_release": 14425539,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1684928",
+            "year": 2019,
+            "thumb": "https://i.discogs.com/Nv3cWgE114Qc68Uk8VGLQylJcLM_WkMUsigQy1E9XxE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDI1/NTM5LTE1NzQyNzkw/MjMtNTg2Ny5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 2,
+                    "in_collection": 5
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1684929,
+            "title": "Champion Of The World",
+            "type": "master",
+            "main_release": 14425554,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1684929",
+            "year": 2019,
+            "thumb": "https://i.discogs.com/X57rsXsplTkZt8KfAFXANDyj6CC8U2e_MIZIOB1YJkM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDI1/NTU0LTE1NzQyNzkx/MDItODM2OS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 2,
+                    "in_collection": 4
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1467398,
+            "title": "Love In Tokyo",
+            "type": "master",
+            "main_release": 12911959,
+            "artist": "コールドプレイ* = Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1467398",
+            "year": 2018,
+            "thumb": "https://i.discogs.com/3unWgmbfLbc9f415ArYdNKvEB_2ed2lpLgjyKgf-vJU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTEx/OTU5LTE1NDgyMDAy/MDItMTUxNC5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 187,
+                    "in_collection": 263
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1467515,
+            "title": "Fix You (Live In Buenos Aires)",
+            "type": "master",
+            "main_release": 12920012,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1467515",
+            "year": 2018,
+            "thumb": "https://i.discogs.com/PgKt8ONLx-KE0aSbZZl6Os4qbzzedD-0yuxu5qOUx-s/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTIw/MDEyLTE1NDQ1NDIx/NDAtNTg1My5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 0,
+                    "in_collection": 1
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1467514,
+            "title": "A Head Full Of Dreams (Live In Buenos Aires)",
+            "type": "master",
+            "main_release": 12920080,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1467514",
+            "year": 2018,
+            "thumb": "https://i.discogs.com/q01FyjRAsL_XPcwnEVenI-iruWpO2vF-pfGPTB5kHus/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTIw/MDgwLTE1NDQ1NDMw/ODQtNzMzNi5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 1,
+                    "in_collection": 2
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1787073,
+            "title": "Live In Buenos Aires / Live In São Paulo / A Head Full Of Dreams",
+            "type": "master",
+            "main_release": 12900768,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1787073",
+            "year": 2018,
+            "thumb": "https://i.discogs.com/lRyH9Tjjoj58C8wXxc7OJhkP7KDEADVvZW6o2uYkcJQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTAw/NzY4LTE1NDQyMjkz/NDItMjE0Ny5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 116,
+                    "in_collection": 1028
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1441058,
+            "title": "Viva La Vida (Live In Buenos Aires)",
+            "type": "master",
+            "main_release": 12685817,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1441058",
+            "year": 2018,
+            "thumb": "https://i.discogs.com/tL8fYCPgkMo9zmiy8VnXTBJOt2cWTqCbHGNhTAjkM9w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjg1/ODE3LTE1NDAwMzg5/MTItNDk3OC5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 2,
+                    "in_collection": 7
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1212426,
+            "title": "A L I E N S",
+            "type": "master",
+            "main_release": 10538172,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1212426",
+            "year": 2017,
+            "thumb": "https://i.discogs.com/71lMF3eNEU1JxOTvr_20-qguIgsPtIKOlEOANSQf43A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTM4/MTcyLTE0OTk0NzUx/MjctMzg0Ny5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 8,
+                    "in_collection": 7
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1202766,
+            "title": "All I Can Think About Is You",
+            "type": "master",
+            "main_release": 10451275,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1202766",
+            "year": 2017,
+            "thumb": "https://i.discogs.com/t1-Ome7htR2CHdtBBtgNNJR56H5mjchIsftGkIaM4lQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDUx/Mjc1LTE0OTc3MDkx/OTAtMTY4MS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 7,
+                    "in_collection": 5
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        },
+        {
+            "id": 1217245,
+            "title": "Kaleidoscope EP",
+            "type": "master",
+            "main_release": 10566497,
+            "artist": "Coldplay",
+            "role": "Main",
+            "resource_url": "https://api.discogs.com/masters/1217245",
+            "year": 2017,
+            "thumb": "https://i.discogs.com/Mh_rIW6xb-P0SMw8Tk5kSlVCPK9Im5ZD9t376wgbUqM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTY2/NDk3LTE1MDAwMjUy/NzAtNzAzNS5qcGVn.jpeg",
+            "stats": {
+                "community": {
+                    "in_wantlist": 16,
+                    "in_collection": 77
+                },
+                "user": {
+                    "in_wantlist": 0,
+                    "in_collection": 0
+                }
+            }
+        }
+    ]
+}

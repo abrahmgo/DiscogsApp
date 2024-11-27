@@ -10,6 +10,10 @@ import NetworkCore
 
 public struct DiscogsDataRemoteDataSource {
     
+    static var bundle: Bundle? {
+        return Bundle(identifier: "com.andres.DiscogsData")
+    }
+    
     public static var searchArtistByName: SearchArtistByNameRemoteDataSource {
         return SearchArtistByNameAPI(service: NetworkCoreAPIConfig.shared.networkService)
     }
