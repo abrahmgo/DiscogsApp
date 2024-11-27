@@ -31,11 +31,11 @@ struct APIConfig: NetworkCoreAPIConfigType {
     }
 
     static var useSampleData: Bool {
-        #if DEBUG
-        return false
-        #else
-        return false
-        #endif
+        guard let mocksInUse = UserDefaults.standard.object(forKey: "MocksInUse") as? String else {
+            return false
+        }
+        
+        return mocksInUse == "YES" ? true : false
     }
 
     static var additionalHeaders: [String: String] {

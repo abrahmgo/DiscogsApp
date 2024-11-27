@@ -46,6 +46,7 @@
 		297F4BFE2CF65DD400BC902A /* RelesesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */; };
 		297F4C002CF65FF100BC902A /* ArtistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */; };
 		297F4C082CF67D0A00BC902A /* DiscogsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F4C072CF67D0A00BC902A /* DiscogsConstants.swift */; };
+		29DB307A2CF6C4200083DF78 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29DB30792CF6C4200083DF78 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		297F4BFD2CF65DD400BC902A /* RelesesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelesesCoordinator.swift; sourceTree = "<group>"; };
 		297F4BFF2CF65FF100BC902A /* ArtistRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRouter.swift; sourceTree = "<group>"; };
 		297F4C072CF67D0A00BC902A /* DiscogsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsConstants.swift; sourceTree = "<group>"; };
+		29DB30792CF6C4200083DF78 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -245,6 +247,7 @@
 			children = (
 				297F4BBE2CF51AD500BC902A /* Network */,
 				297F4C072CF67D0A00BC902A /* DiscogsConstants.swift */,
+				29DB30792CF6C4200083DF78 /* Settings.bundle */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -295,8 +298,8 @@
 				297F4B492CF51A4A00BC902A /* Sources */,
 				297F4B4A2CF51A4A00BC902A /* Frameworks */,
 				297F4B4B2CF51A4A00BC902A /* Resources */,
+				296CE2632CF6BB4800130786 /* SwiftLint */,
 				297F4BC52CF51AED00BC902A /* Embed Frameworks */,
-				296CE2632CF6BB4800130786 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -405,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				297F4B8E2CF51A5B00BC902A /* Assets.xcassets in Resources */,
+				29DB307A2CF6C4200083DF78 /* Settings.bundle in Resources */,
 				297F4B902CF51A5B00BC902A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +430,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		296CE2632CF6BB4800130786 /* ShellScript */ = {
+		296CE2632CF6BB4800130786 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -436,6 +440,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
