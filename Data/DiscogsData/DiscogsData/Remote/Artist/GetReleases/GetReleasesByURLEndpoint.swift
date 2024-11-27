@@ -29,13 +29,13 @@ struct GetReleasesByURLEndpoint: NetworkTargetType {
     
     var body: Data?
     
-    var queryParams: [String : Any]? {
+    var queryParams: [String: Any]? {
         return ["per_page": 30,
                 "sort": model.sort.rawValue,
                 "sort_order": "desc"]
     }
     
-    var headers: [String : String]?
+    var headers: [String: String]?
     
     var sampleData: Data? {
         let bundle = DiscogsDataRemoteDataSource.bundle

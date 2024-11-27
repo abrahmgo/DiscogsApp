@@ -27,7 +27,7 @@ struct SearchArtistByNameAPI: SearchArtistByNameRemoteDataSource {
             throw DiscogsError.withoutResults
         }
         
-        let result = ArtistSearchInfo(artists: request.results.map{$0.mapToSearchArtist()},
+        let result = ArtistSearchInfo(artists: request.results.map {$0.mapToSearchArtist()},
                                       pagination: request.pagination?.mapToPagination())
         return result
     }

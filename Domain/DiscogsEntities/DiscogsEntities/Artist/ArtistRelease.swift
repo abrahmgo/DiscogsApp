@@ -27,8 +27,12 @@ public struct ArtistRelease {
     public let imageURL: String
     public let year: Int
     
-    public init(format: String, id: Int, title: String,
-                subtilte: String, imageURL: String, year: Int) {
+    public init(format: String,
+                id: Int,
+                title: String,
+                subtilte: String,
+                imageURL: String,
+                year: Int) {
         self.format = format
         self.id = id
         self.title = title

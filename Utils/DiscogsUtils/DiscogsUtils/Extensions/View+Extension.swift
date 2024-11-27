@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ViewDidLoadModifier: ViewModifier {
+    
     @State private var viewDidLoad = false
     let action: (() -> Void)?
     
@@ -23,6 +24,7 @@ struct ViewDidLoadModifier: ViewModifier {
 }
 
 public extension View {
+    
     func onViewDidLoad(perform action: (() -> Void)? = nil) -> some View {
         self.modifier(ViewDidLoadModifier(action: action))
     }

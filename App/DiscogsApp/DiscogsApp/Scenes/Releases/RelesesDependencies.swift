@@ -13,4 +13,3 @@ struct RelesesDependencies {
     let releasesURL: String
     let getReleases: GetReleasesByURLUsecaseType
 }
-

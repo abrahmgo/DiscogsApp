@@ -11,7 +11,6 @@ import XCTest
 @testable import DiscogsDataSource
 @testable import NetworkCore
 
-
 final class GetArtistTests: XCTestCase {
 
     var getArtistByURLAPI: GetArtistByURLRemoteDataSource?

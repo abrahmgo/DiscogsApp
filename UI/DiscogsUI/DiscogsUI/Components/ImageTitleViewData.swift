@@ -14,6 +14,7 @@ public protocol ImageTitleViewDataType {
 }
 
 public struct ImageTitleViewData: ImageTitleViewDataType {
+    
     public let id: String
     public let title: String
     public let urlImage: String

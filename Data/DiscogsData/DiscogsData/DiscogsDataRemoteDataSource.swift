@@ -26,4 +26,3 @@ public struct DiscogsDataRemoteDataSource {
         return GetReleasesByURLAPI(service: NetworkCoreAPIConfig.shared.networkService)
     }
 }
-

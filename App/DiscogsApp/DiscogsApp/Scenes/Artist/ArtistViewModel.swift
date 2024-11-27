@@ -18,7 +18,6 @@ class ArtistViewModel: ObservableObject {
     private let dependencies: ArtistDependencies
     private var releasesURL: String = ""
     
-    
     init(dependencies: ArtistDependencies) {
         self.dependencies = dependencies
     }
@@ -35,9 +34,7 @@ class ArtistViewModel: ObservableObject {
                     self.model = model
                 }
                 await setMembers(members: artist.members)
-            } catch {
-                
-            }
+            } catch { }
         }
     }
     

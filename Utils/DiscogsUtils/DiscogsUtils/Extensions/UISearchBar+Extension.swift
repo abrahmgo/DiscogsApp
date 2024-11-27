@@ -8,6 +8,7 @@
 import SwiftUI
 
 public extension UISearchBar {
+    
     /// Agrega una acción personalizada al botón "Cancelar"
     func setCancelButtonAction(_ action: @escaping () -> Void) {
         let originalSelector = #selector(self.cancelButtonTapped)
@@ -30,5 +31,6 @@ public extension UISearchBar {
 }
 
 private struct AssociatedKeys {
+    
     static var cancelAction = "cancelAction"
 }

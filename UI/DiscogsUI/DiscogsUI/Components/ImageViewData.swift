@@ -12,6 +12,7 @@ public protocol ImageViewDataType {
 }
 
 public struct ImageViewData: ImageViewDataType {
+    
     public let urlImage: String
     
     public init(urlImage: String) {

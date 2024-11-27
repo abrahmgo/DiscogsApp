@@ -24,6 +24,7 @@ public extension NetworkCoreAPIConfigType {
 
 public final class NetworkCoreAPIConfig {
     
+    // swiftlint:disable:next implicitly_unwrapped_optional
     public static var shared: NetworkCoreAPIConfig!
     
     public let baseURL: String
@@ -45,5 +46,3 @@ public final class NetworkCoreAPIConfig {
         }
     }
 }
-
-

@@ -1,0 +1,164 @@
+disabled_rules:
+    - trailing_whitespace
+    - multiple_closures_with_trailing_closure
+    - vertical_parameter_alignment
+    - switch_case_alignment
+    - nesting
+opt_in_rules:
+    - vertical_whitespace_closing_braces
+    - conditional_returns_on_newline
+    - discouraged_optional_boolean
+    - empty_string
+    - empty_count
+    - first_where
+    - flatmap_over_map_reduce
+    - force_unwrapping
+    - implicitly_unwrapped_optional
+    - let_var_whitespace
+    - multiline_parameters
+    - overridden_super_call
+    - reduce_into
+    - sorted_first_last
+    - unowned_variable_capture
+    - unused_import
+    - yoda_condition
+    - statement_position
+included:
+    - ./
+excluded:
+  - Pods
+
+statement_position:
+    severity: error
+    
+yoda_condition:
+    severity: error
+    
+weak_delegate:
+    severity: error
+
+unused_import:
+    severity: error
+    
+unowned_variable_capture:
+    severity: error
+    
+sorted_first_last:
+    severity: error
+    
+reduce_into:
+    severity: error
+    
+overridden_super_call:
+    severity: error
+    
+multiline_parameters:
+    severity: error
+    
+let_var_whitespace:
+    severity: error
+    
+force_cast:
+    severity: error
+    
+force_try:
+    severity: error
+
+force_unwrapping:
+    severity: error
+    
+flatmap_over_map_reduce:
+    severity: error
+    
+vertical_whitespace:
+    severity: error
+
+vertical_whitespace_closing_braces:
+    severity: error
+    
+implicitly_unwrapped_optional:
+    severity: error
+    
+first_where:
+    severity: error
+    
+colon:
+    severity: error
+    
+empty_count:
+    severity: error
+ 
+comma:
+    severity: error
+ 
+duplicate_imports:
+    severity: error
+    
+empty_string:
+    severity: error
+    
+discouraged_optional_boolean:
+    severity: error
+     
+trailing_newline:
+    severity: error
+ 
+control_statement:
+    severity: error
+    
+cyclomatic_complexity:
+    warning: 10
+    error: 10
+    
+unused_closure_parameter:
+    severity: error
+ 
+opening_brace:
+    severity: error
+ 
+identifier_name:
+    min_length: 2
+    max_length: 50
+ 
+line_length:
+    warning: 150
+    error: 150
+    ignores_comments: true
+ 
+type_body_length:
+    warning: 200
+    error: 200
+
+function_body_length:
+    warning: 30
+    error: 30
+    
+file_length:
+    warning: 300
+    error: 300
+    
+conditional_returns_on_newline:
+    severity: error
+    
+type_name:
+  min_length: 3
+  max_length:
+    error: 50
+
+custom_rules:
+    
+    empty_first_line:
+         name: "Empty First Line"
+         regex: "(^[ a-zA-Z ]*(?:extension|class|struct) (?!(?:var|let))[ a-zA-Z:]*\\{\n *\\S+)"
+         message: "There should be an empty line after a declaration"
+         severity: error
+    empty_line_after_guard:
+         name: "Empty Line After Guard"
+         regex: "(^ *guard[ a-zA-Z0-9=?.\\(\\),><!]*\\{[ a-zA-Z0-9=?.\\(\\),><!]*\\}\n *(?!(?:return|guard))\\S+)"
+         message: "There should be an empty line after a guard"
+         severity: error
+    empty_line_after_super:
+        name: "Empty Line After Super"
+        regex: "(^ *super\\.[ a-zA-Z0-9=?.\\(\\)\\{\\}:,><!]*\n *(?!(?:\\}|return))\\S+)"
+        message: "There should be an empty line after super"
+        severity: error

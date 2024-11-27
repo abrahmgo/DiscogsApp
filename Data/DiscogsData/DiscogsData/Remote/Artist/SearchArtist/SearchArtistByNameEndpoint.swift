@@ -29,14 +29,14 @@ struct SearchArtistByNameEndpoint: NetworkTargetType {
     
     var body: Data?
     
-    var queryParams: [String : Any]? {
+    var queryParams: [String: Any]? {
         return ["query": model.name,
                 "type": "artist",
                 "page": model.page,
                 "per_page": model.perPage]
     }
     
-    var headers: [String : String]?
+    var headers: [String: String]?
     
     var sampleData: Data? {
         let bundle = DiscogsDataRemoteDataSource.bundle

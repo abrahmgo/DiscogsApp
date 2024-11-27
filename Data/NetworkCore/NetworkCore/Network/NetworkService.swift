@@ -45,7 +45,7 @@ struct NetworkService: NetworkServiceType {
         request.httpBody = target.body
         
         return try await withCheckedThrowingContinuation { continuation in
-            self.session.dataTask(with: request) { data, response, error in
+            self.session.dataTask(with: request) { data, _, error in
                 if let error = error {
                     continuation.resume(throwing: error)
                 } else if let data = data {
@@ -57,7 +57,7 @@ struct NetworkService: NetworkServiceType {
         }
     }
     
-    func request<T>(target: NetworkTargetType) async throws -> T where T : Decodable {
+    func request<T>(target: NetworkTargetType) async throws -> T where T: Decodable {
         
         guard let url = prepareURL(target: target) else {
             throw NetworkError.invalidURL
@@ -69,7 +69,7 @@ struct NetworkService: NetworkServiceType {
         request.httpBody = target.body
         
         return try await withCheckedThrowingContinuation { continuation in
-            self.session.dataTask(with: request) { data, response, error in
+            self.session.dataTask(with: request) { data, _, error in
                 if let error = error {
                     continuation.resume(throwing: error)
                 } else if let data = data {

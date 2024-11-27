@@ -29,11 +29,11 @@ struct GetArtistByURLEndpoint: NetworkTargetType {
     
     var body: Data?
     
-    var queryParams: [String : Any]? {
+    var queryParams: [String: Any]? {
         return nil
     }
     
-    var headers: [String : String]?
+    var headers: [String: String]?
     
     var sampleData: Data? {
         let bundle = DiscogsDataRemoteDataSource.bundle
@@ -42,4 +42,3 @@ struct GetArtistByURLEndpoint: NetworkTargetType {
         return sampleData.getData(for: "GetArtistExample")
     }
 }
-

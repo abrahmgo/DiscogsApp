@@ -18,6 +18,7 @@ public struct ImageView: View {
             return DataLoader(configuration: config)
         }()
         $0.imageCache = ImageCache()
+        // swiftlint:disable:next force_try
         $0.dataCache = try! DataCache(name: "com.andres.DiscogsUI")
     }
     
@@ -46,5 +47,6 @@ public struct ImageView: View {
 }
 
 #Preview {
+    // swiftlint:disable:next line_length
     ImageView(url: "https://i.discogs.com/9jtopJV_AtNtViuedtsCG8tKNaBNXkHxI1AFv9aXksg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTkyNzkz/LTE2OTIzMjA3NDEt/NDk5NC5qcGVn.jpeg")
 }

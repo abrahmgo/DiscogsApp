@@ -4,6 +4,7 @@
 //
 //  Created by Andrés Abraham Bonilla Gómez on 25/11/24.
 //
+// swiftlint:disable identifier_name
 
 import Foundation
 
@@ -31,3 +32,5 @@ struct GetArtistByURLMembersResponseModel: Decodable {
     let active: Bool
     let thumbnail_url: String
 }
+
+// swiftlint:enable identifier_name

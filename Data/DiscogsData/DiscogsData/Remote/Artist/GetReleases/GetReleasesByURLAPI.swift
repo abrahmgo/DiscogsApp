@@ -26,7 +26,7 @@ struct GetReleasesByURLAPI: GetReleasesByURLRemoteDataSource {
             throw DiscogsError.withoutResults
         }
         
-        let result = ArtistReleaseInfo(releases: request.releases.map{$0.mapToRelease()},
+        let result = ArtistReleaseInfo(releases: request.releases.map {$0.mapToRelease()},
                                       pagination: request.pagination.mapToPagination())
         return result
     }

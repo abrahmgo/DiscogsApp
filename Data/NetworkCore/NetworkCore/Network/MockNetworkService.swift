@@ -11,7 +11,7 @@ struct MockNetworkService: NetworkServiceType {
     
     init() { }
     
-    func request<T>(target: NetworkTargetType) async throws -> T where T : Decodable {
+    func request<T>(target: NetworkTargetType) async throws -> T where T: Decodable {
         
         let endpoint = target.url()
         

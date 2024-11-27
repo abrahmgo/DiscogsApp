@@ -14,7 +14,7 @@ extension GetArtistByURLResponseModel {
                           name: name,
                           profile: profile,
                           releaseURL: releases_url,
-                          images: images.map{$0.mapToImages()},
+                          images: images.map {$0.mapToImages()},
                           members: members?.map({$0.mapToMembers()}) ?? [])
     }
 }

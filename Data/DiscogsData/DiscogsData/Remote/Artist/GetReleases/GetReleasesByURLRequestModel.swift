@@ -8,6 +8,7 @@
 import DiscogsEntities
 
 struct GetReleasesByURLRequestModel {
+    
     let url: String
     let sort: DiscogsTypeSort
 }

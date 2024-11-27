@@ -19,7 +19,7 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     
     @Published var artists: [ImageTitleViewDataType] = []
     @Published var searchText: String = ""
-
+    
     private var isSearching: Bool = false
     private var artistSearch: [ArtistSearch] = []
     private let dependencies: SearchArtistViewModelDependencies
@@ -31,10 +31,12 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
     func searchArtist(name: String) {
         Task {
             do {
-                guard !isSearching else { return }
+                guard !isSearching else {
+                    return
+                }
                 isSearching = true
                 let results = try await dependencies.searchArtistByNameUsecase.execute(name: name)
-                let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
+                let artists = results.map {ImageTitleViewData(id: "\($0.id)",
                                                               title: $0.name,
                                                               urlImage: $0.thumb)}
                 artistSearch += results
@@ -56,15 +58,13 @@ class SearchArtistViewModel: SearchArtistViewModelType, ObservableObject {
             do {
                 let results = try await dependencies.searchArtistByNameUsecase.more()
                 artistSearch += results
-                let artists = results.map{ ImageTitleViewData(id: "\($0.id)",
-                                                              title: $0.name,
-                                                              urlImage: $0.thumb)}
+                let artists = results.map { ImageTitleViewData(id: "\($0.id)",
+                                                               title: $0.name,
+                                                               urlImage: $0.thumb)}
                 await MainActor.run {
                     self.artists += artists
                 }
-            } catch {
-                
-            }
+            } catch { }
         }
     }
     

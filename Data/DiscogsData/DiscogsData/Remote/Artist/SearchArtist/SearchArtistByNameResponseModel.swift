@@ -4,6 +4,7 @@
 //
 //  Created by Andrés Abraham Bonilla Gómez on 22/11/24.
 //
+// swiftlint:disable identifier_name
 
 import NetworkCore
 
@@ -12,7 +13,6 @@ struct SearchArtistByNameResponseModel: Decodable {
     let results: [SearchArtistByNameResultsResponseModel]
     let pagination: NetworkCorePagination?
 }
-
 
 struct SearchArtistByNameResultsResponseModel: Decodable {
     
@@ -23,3 +23,4 @@ struct SearchArtistByNameResultsResponseModel: Decodable {
     let cover_image: String
     let resource_url: String
 }
+// swiftlint:enable identifier_name

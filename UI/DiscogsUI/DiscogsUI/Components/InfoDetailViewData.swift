@@ -25,9 +25,12 @@ public struct InfoDetailViewData: InfoDetailViewDataType {
     public let subtitle3: String
     public let urlImage: String
     
-    public init(id: Int, title: String, subtitle: String,
+    public init(id: Int,
+                title: String,
+                subtitle: String,
                 subtitle2: String,
-                subtitle3: String, urlImage: String) {
+                subtitle3: String,
+                urlImage: String) {
         self.id = id
         self.title = title
         self.subtitle = subtitle
