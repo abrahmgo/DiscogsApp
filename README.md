@@ -35,7 +35,7 @@ Go to ```APIConfig``` file and **set token property with your own value**
 
 ## App Settings
 
-- Change if the app uses mocks
+- Change if the app uses mocks (by the fault is NO)
 - Change url server, thi option it will available if we have two or more servers/environments
   
 Go to settings app, select Discogs app, change if the app will use mocks

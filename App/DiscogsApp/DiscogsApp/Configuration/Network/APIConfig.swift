@@ -43,6 +43,6 @@ struct APIConfig: NetworkCoreAPIConfigType {
     }
 
     static var token: String {
-        return "WTsyWqIQOTqwyhdWvqQgxpYkGqVgUDWDiyPnjWcY"
+        return ""
     }
 }
