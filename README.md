@@ -60,6 +60,9 @@ The application has this framework and a rules file, which allows to maintain th
 
 Also you can se the file ```swiftlint_report.html``` to see the report
 
+
+<img width="400" alt="Captura de pantalla 2024-11-27 a la(s) 12 25 43 a m" src="https://github.com/user-attachments/assets/cf15f2e5-8156-43db-b38b-afe53e374b71">
+
 ## API Reference
 
 #### Search artist by name
