@@ -9,6 +9,14 @@ Discogs app, this application is a demo that takes several swift topics, such as
 
 ## Before to start
 
+### Install dependencies
+
+```shell
+    brew install swiftlint
+```
+
+**NOTE** You need homebrew to execute previus command
+
 ### API Token
 
 Go to ```APIConfig``` file and **set token property with your own value**
@@ -30,7 +38,7 @@ Go to ```APIConfig``` file and **set token property with your own value**
 - Change if the app uses mocks
 - Change url server, thi option it will available if we have two or more servers/environments
   
-Go to settings app, select Discogs app, change language
+Go to settings app, select Discogs app, change if the app will use mocks
 
 **NOTE** Don't forget to restart the app to apply the changes.
 
@@ -41,6 +49,11 @@ Go to settings app, select Discogs app, change language
 
 To run tests, choose discogs app, go to test section and run it
 
+
+
+## Swiftlint
+
+The application has this framework and a rules file, which allows to maintain the code quality, if any rule is broken, xcode can't compile until the defect is fixed.
 
 ## API Reference
 

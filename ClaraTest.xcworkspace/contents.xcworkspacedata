@@ -52,4 +52,7 @@
          location = "group:DiscogsApp/DiscogsApp.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:App/DiscogsAppFull.xctestplan">
+   </FileRef>
 </Workspace>

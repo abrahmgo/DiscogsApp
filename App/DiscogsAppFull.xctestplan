@@ -1,0 +1,93 @@
+{
+  "configurations" : [
+    {
+      "id" : "5844EC27-422B-4314-85C1-B9B3BCE95D19",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DiscogsApp.xcodeproj",
+      "identifier" : "297F4B4C2CF51A4A00BC902A",
+      "name" : "DiscogsApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DiscogsApp.xcodeproj",
+        "identifier" : "297F4B622CF51A4B00BC902A",
+        "name" : "DiscogsAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Domain\/DiscogsEntities\/DiscogsEntities.xcodeproj",
+        "identifier" : "290D16AF2CF1227B006702B4",
+        "name" : "DiscogsEntitiesTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Domain\/DiscogsUsecases\/DiscogsUsecases.xcodeproj",
+        "identifier" : "290D16D22CF1229E006702B4",
+        "name" : "DiscogsUsecasesTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Gateways\/DiscogsDataSource\/DiscogsDataSource.xcodeproj",
+        "identifier" : "290D175E2CF1230E006702B4",
+        "name" : "DiscogsDataSourceTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Data\/NetworkCore\/NetworkCore.xcodeproj",
+        "identifier" : "290D16792CF12013006702B4",
+        "name" : "NetworkCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Utils\/DiscogsUtils\/DiscogsUtils.xcodeproj",
+        "identifier" : "290D17182CF122D1006702B4",
+        "name" : "DiscogsUtilsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Data\/DiscogsData\/DiscogsData.xcodeproj",
+        "identifier" : "290D16F52CF122B8006702B4",
+        "name" : "DiscogsDataTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/UI\/DiscogsUI\/DiscogsUI.xcodeproj",
+        "identifier" : "290D17812CF12349006702B4",
+        "name" : "DiscogsUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/..\/Utils\/DiscogsLocalizable\/DiscogsLocalizable.xcodeproj",
+        "identifier" : "290D173B2CF122E6006702B4",
+        "name" : "DiscogsLocalizableTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:DiscogsApp.xcodeproj",
+        "identifier" : "297F4B6C2CF51A4B00BC902A",
+        "name" : "DiscogsAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
