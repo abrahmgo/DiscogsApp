@@ -49,6 +49,9 @@ Go to settings app, select Discogs app, change if the app will use mocks
 
 To run tests, choose discogs app, go to test section and run it
 
+<img width="974" alt="Captura de pantalla 2024-11-26 a la(s) 11 34 11 p m" src="https://github.com/user-attachments/assets/f61b3e5a-0ca4-42c6-ab0a-d27cce208604">
+
+<img width="276" alt="Captura de pantalla 2024-11-26 a la(s) 11 34 29 p m" src="https://github.com/user-attachments/assets/b2a886e8-dc30-4500-8054-737d2bda9e85">
 
 
 ## Swiftlint
@@ -67,7 +70,7 @@ The application has this framework and a rules file, which allows to maintain th
 | :-------- | :------- | :------------------------- |
 | `page` | `Int` | page |
 | `per_page` | `Int` | elements per page|
-| `API key` | `Double` | api key |
+| `API key` | `String` | api key |
 | `query` | `String` | Artist name |
 | `type` | `String` | artist |
 
@@ -117,7 +120,7 @@ Example for api
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `API key` | `Double` | api key |
+| `API key` | `String` | api key |
 
 Example for api
 
@@ -205,7 +208,6 @@ Example for api
 ```
 
 To more detail [Artist](https://www.discogs.com/developers/#page:database,header:database-artist)
-
 
 
 ## Things to improve
